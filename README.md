@@ -1,6 +1,6 @@
 # FCHEV-EMS: Health-aware Energy Management Strategy using SAC + Beta Policy with Temperature-based Reward
 
-\## Overview
+## Overview
 
 This repository reproduces the original **“Health-considered energy management strategy for FCHEV using improved SAC with Beta Policy”**  
 and extends it by redesigning the reward with a **battery core temperature penalty** to improve thermal safety, SOC stability,  
