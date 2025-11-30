@@ -1,5 +1,3 @@
-# FCHEV-EMS: Health-aware Energy Management Strategy using SAC + Beta Policy with Temperature-based Reward
-
 ## Overview
 
 This repository reproduces the original **“Health-considered energy management strategy for FCHEV using improved SAC with Beta Policy”**  
@@ -32,19 +30,18 @@ Experimental results show that the redesigned reward:
 - with only a moderate increase in hydrogen consumption.
 
 ---
-
 ## Project Structure
+```
+common/                     # 환경 설정, arguments, utility functions
+eva_SAC_CS_Beta/            # evaluation scripts
+test5_SAC_CS_Beta/          # 원본 논문 재현 (SOC 기반 reward)
+test8_SAC_CS_Beta/          # 논문 재현 + 배터리 코어 온도 로그 저장
+test9_SAC_CS_Beta/          # 보상 조건 개선 (SOC + Temperature penalty)
+project-data-main/          # driving cycles, FCHEV component data
+*.ipynb                     # 분석 및 결과 플로팅 노트북
+README.md
+```
 
-common/                     # 환경 설정, arguments, utility functions  
-eva_SAC_CS_Beta/            # evaluation scripts  
-test5_SAC_CS_Beta/          # 원본 논문 재현 (SOC 기반 reward)  
-test8_SAC_CS_Beta/          # 논문 재현 + 배터리 코어 온도 로그 저장  
-test9_SAC_CS_Beta/          # 보상 조건 개선 (SOC + Temperature penalty)  
-project-data-main/          # driving cycles, FCHEV component data  
-*.ipynb                     # 분석 및 결과 플로팅 노트북  
-README.md  
-
----
 
 ## How to Run
 
@@ -64,11 +61,16 @@ common/arguments.py
 
 ### 2) Training
 
+```
 python main.py --mode train --scenario_name MixTrain --reward_mode temp_penalty
+```
 
 ### 3) Evaluation
 
+```
 python main.py --mode eval --scenario_name MixTrain --model_path <saved_model_directory>
+```
+
 ---
 
 ## Trained Models (Deep Learning Checkpoints)
@@ -108,13 +110,16 @@ test9_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1_73/episode_data
 
 ## Citation
 
+If you use this repository or reference the methodology, please cite the original work:
+
 @article{chen2023health,
-title={Health-considered energy management strategy for fuel cell hybrid electric vehicle based on improved soft actor critic algorithm adopted with Beta policy},
-author={Chen, Weiqi and Peng, Jiankun and Chen, Jun and Zhou, Jiaxuan and Wei, Zhongbao and Ma, Chunye},
-journal={Energy Conversion and Management},
-volume={292},
-pages={117362},
-year={2023},
-publisher={Elsevier}
+  title={Health-considered energy management strategy for fuel cell hybrid electric vehicle based on improved soft actor critic algorithm adopted with Beta policy},
+  author={Chen, Weiqi and Peng, Jiankun and Chen, Jun and Zhou, Jiaxuan and Wei, Zhongbao and Ma, Chunye},
+  journal={Energy Conversion and Management},
+  volume={292},
+  pages={117362},
+  year={2023},
+  publisher={Elsevier}
 }
+
 
