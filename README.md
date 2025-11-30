@@ -110,8 +110,7 @@ test9_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1_73/episode_data
 
 ## Citation
 
-If you use this repository or reference the methodology, please cite the original work:
-
+```
 @article{chen2023health,
   title={Health-considered energy management strategy for fuel cell hybrid electric vehicle based on improved soft actor critic algorithm adopted with Beta policy},
   author={Chen, Weiqi and Peng, Jiankun and Chen, Jun and Zhou, Jiaxuan and Wei, Zhongbao and Ma, Chunye},
@@ -121,5 +120,6 @@ If you use this repository or reference the methodology, please cite the origina
   year={2023},
   publisher={Elsevier}
 }
+```
 
 
