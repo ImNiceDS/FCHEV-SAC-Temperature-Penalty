@@ -99,10 +99,10 @@ test9_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1_73/episode_data
 
 ## Data Source
 
-## Driving Cycles
+1) Driving Cycles
 🔗 https://github.com/ImNiceDS/FCHEV-SAC-Temperature-Penalty/tree/8594e030dc4df073a110a6628f525bcd52db4c65/project-data-main/standard_driving_cycles
 
-## FCHEV Power System Data
+2) FCHEV Power System Data
 🔗 https://github.com/ImNiceDS/FCHEV-SAC-Temperature-Penalty/tree/8594e030dc4df073a110a6628f525bcd52db4c65/project-data-main/FCHEV_data
 
 
