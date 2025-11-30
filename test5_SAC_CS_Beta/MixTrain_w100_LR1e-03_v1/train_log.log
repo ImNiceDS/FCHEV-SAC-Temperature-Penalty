@@ -1,0 +1,1119 @@
+
+weight coefficient: w_soc = 100.0
+max_episodes:  400
+cycle name:  MixTrain_w100_LR1e-03_v1
+episode_steps:  3440
+abs_spd_MAX: 31.667 m/s
+abs_acc_MAX: 1.944 m/s2
+DRL method:  SAC
+obs_dim:  7
+action_dim:  1
+critic initial learning rate: 1e-03
+actor initial learning rate: 1e-04
+alpha initial learning rate: 1e-04
+initial SOC:  0.5
+SOC-MODE:  CS
+
+-----Start training-----
+
+---Beta policy is employed.---
+
+actor device:  cuda:0
+critic device:  cuda:0
+Random seeds have been set to 79 !
+
+
+failure in step 2506 of episode 0
+
+epi 0: travel 39.438km, SOC -0.7208, FCS-SOH 0.999540, Bat-SOH 0.999005
+epi 0: H2_100km 1991.0g, eq_H2_100km 5567.7g, money_100km ￥714.72
+epi 0: ep_r -339.816, c-loss1 47057.6047, c-loss2 46891.3015, a-loss 284.9013, en-loss 0.1045
+epi 0: lr_critic 0.000050, lr_actor 0.000050, lr_alpha 0.000050
+
+failure in step 615 of episode 1
+
+epi 1: travel 39.438km, SOC 0.4623, FCS-SOH 0.999818, Bat-SOH 0.999243
+epi 1: H2_100km 4397.8g, eq_H2_100km 7520.4g, money_100km ￥586.61
+epi 1: ep_r -600.686, c-loss1 226458.8284, c-loss2 217421.0995, a-loss 3206.9189, en-loss -1.1906
+epi 1: lr_critic 0.000074, lr_actor 0.000051, lr_alpha 0.000051
+
+failure in step 1582 of episode 2
+
+epi 2: travel 39.438km, SOC -1.9491, FCS-SOH 0.999993, Bat-SOH 0.997965
+epi 2: H2_100km 62.3g, eq_H2_100km 4323.5g, money_100km ￥541.82
+epi 2: ep_r -855.164, c-loss1 262974.2790, c-loss2 232027.0989, a-loss 8084.5739, en-loss -3.2469
+epi 2: lr_critic 0.000097, lr_actor 0.000052, lr_alpha 0.000052
+
+failure in step 1582 of episode 3
+
+epi 3: travel 39.438km, SOC -1.9475, FCS-SOH 0.999993, Bat-SOH 0.997964
+epi 3: H2_100km 64.3g, eq_H2_100km 4322.7g, money_100km ￥543.00
+epi 3: ep_r -855.443, c-loss1 421424.0865, c-loss2 278581.0975, a-loss 14360.4004, en-loss -3.7559
+epi 3: lr_critic 0.000121, lr_actor 0.000054, lr_alpha 0.000054
+
+failure in step 1581 of episode 4
+
+epi 4: travel 39.438km, SOC -1.8814, FCS-SOH 0.999953, Bat-SOH 0.998004
+epi 4: H2_100km 159.0g, eq_H2_100km 4325.4g, money_100km ￥564.97
+epi 4: ep_r -842.675, c-loss1 420295.9797, c-loss2 303262.3595, a-loss 22296.7529, en-loss -3.6483
+epi 4: lr_critic 0.000145, lr_actor 0.000055, lr_alpha 0.000055
+
+failure in step 1585 of episode 5
+
+epi 5: travel 39.438km, SOC -1.6744, FCS-SOH 0.999864, Bat-SOH 0.998071
+epi 5: H2_100km 463.8g, eq_H2_100km 4422.9g, money_100km ￥628.64
+epi 5: ep_r -772.775, c-loss1 308176.2065, c-loss2 390063.0975, a-loss 30113.7254, en-loss -2.5663
+epi 5: lr_critic 0.000169, lr_actor 0.000056, lr_alpha 0.000056
+
+failure in step 1695 of episode 6
+
+epi 6: travel 39.438km, SOC -0.2233, FCS-SOH 0.999681, Bat-SOH 0.998611
+epi 6: H2_100km 3103.0g, eq_H2_100km 5554.0g, money_100km ￥771.61
+epi 6: ep_r -361.005, c-loss1 266661.0805, c-loss2 342407.6731, a-loss 36784.3621, en-loss -2.0800
+epi 6: lr_critic 0.000192, lr_actor 0.000058, lr_alpha 0.000058
+
+failure in step 1696 of episode 7
+
+epi 7: travel 39.438km, SOC -0.7306, FCS-SOH 0.999620, Bat-SOH 0.998508
+epi 7: H2_100km 2125.7g, eq_H2_100km 5091.6g, money_100km ￥792.34
+epi 7: ep_r -475.032, c-loss1 249679.3653, c-loss2 301478.4094, a-loss 40657.9920, en-loss -1.6763
+epi 7: lr_critic 0.000216, lr_actor 0.000059, lr_alpha 0.000059
+
+failure in step 1682 of episode 8
+
+epi 8: travel 39.438km, SOC -0.9939, FCS-SOH 0.999656, Bat-SOH 0.998176
+epi 8: H2_100km 1643.4g, eq_H2_100km 4892.6g, money_100km ￥820.92
+epi 8: ep_r -569.016, c-loss1 250909.5741, c-loss2 287589.4107, a-loss 44577.5424, en-loss -1.4963
+epi 8: lr_critic 0.000240, lr_actor 0.000060, lr_alpha 0.000060
+
+failure in step 1695 of episode 9
+
+epi 9: travel 39.438km, SOC -0.5475, FCS-SOH 0.999690, Bat-SOH 0.998535
+epi 9: H2_100km 2471.3g, eq_H2_100km 5340.9g, money_100km ￥751.22
+epi 9: ep_r -498.428, c-loss1 258575.7377, c-loss2 283091.1109, a-loss 48447.6049, en-loss -1.0981
+epi 9: lr_critic 0.000264, lr_actor 0.000061, lr_alpha 0.000061
+
+failure in step 1693 of episode 10
+
+epi 10: travel 39.438km, SOC -0.5331, FCS-SOH 0.999610, Bat-SOH 0.998643
+epi 10: H2_100km 2470.1g, eq_H2_100km 5371.3g, money_100km ￥783.36
+epi 10: ep_r -434.301, c-loss1 268027.8377, c-loss2 283170.8270, a-loss 51197.7869, en-loss -0.7815
+epi 10: lr_critic 0.000287, lr_actor 0.000063, lr_alpha 0.000063
+
+failure in step 1697 of episode 11
+
+epi 11: travel 39.438km, SOC -0.9130, FCS-SOH 0.999559, Bat-SOH 0.998449
+epi 11: H2_100km 1762.9g, eq_H2_100km 5014.4g, money_100km ￥830.97
+epi 11: ep_r -551.243, c-loss1 264365.2438, c-loss2 272766.0086, a-loss 53297.3233, en-loss -0.4438
+epi 11: lr_critic 0.000311, lr_actor 0.000064, lr_alpha 0.000064
+
+failure in step 1697 of episode 12
+
+epi 12: travel 39.438km, SOC -0.8543, FCS-SOH 0.999535, Bat-SOH 0.998398
+epi 12: H2_100km 1864.1g, eq_H2_100km 5097.3g, money_100km ￥868.16
+epi 12: ep_r -500.152, c-loss1 282166.6900, c-loss2 287101.1578, a-loss 56730.2761, en-loss -0.1268
+epi 12: lr_critic 0.000335, lr_actor 0.000065, lr_alpha 0.000065
+
+failure in step 1700 of episode 13
+
+epi 13: travel 39.438km, SOC -0.6290, FCS-SOH 0.999543, Bat-SOH 0.998398
+epi 13: H2_100km 2272.0g, eq_H2_100km 5283.0g, money_100km ￥883.18
+epi 13: ep_r -455.285, c-loss1 311200.0372, c-loss2 314973.1476, a-loss 58972.2864, en-loss -0.0943
+epi 13: lr_critic 0.000359, lr_actor 0.000066, lr_alpha 0.000066
+
+failure in step 1696 of episode 14
+
+epi 14: travel 39.438km, SOC -0.3702, FCS-SOH 0.999580, Bat-SOH 0.998545
+epi 14: H2_100km 2741.0g, eq_H2_100km 5527.2g, money_100km ￥843.81
+epi 14: ep_r -418.894, c-loss1 317681.3810, c-loss2 321173.3093, a-loss 59364.6155, en-loss -0.0549
+epi 14: lr_critic 0.000383, lr_actor 0.000068, lr_alpha 0.000068
+
+failure in step 1702 of episode 15
+
+epi 15: travel 39.438km, SOC -0.4371, FCS-SOH 0.999559, Bat-SOH 0.998426
+epi 15: H2_100km 2582.6g, eq_H2_100km 5543.2g, money_100km ￥881.71
+epi 15: ep_r -435.073, c-loss1 333126.8014, c-loss2 338404.6289, a-loss 56891.8556, en-loss 0.0308
+epi 15: lr_critic 0.000406, lr_actor 0.000069, lr_alpha 0.000069
+
+failure in step 1711 of episode 16
+
+epi 16: travel 39.438km, SOC -0.4257, FCS-SOH 0.999590, Bat-SOH 0.998532
+epi 16: H2_100km 2609.8g, eq_H2_100km 5512.2g, money_100km ￥834.35
+epi 16: ep_r -421.310, c-loss1 349970.6763, c-loss2 357332.3399, a-loss 54301.8898, en-loss -0.1343
+epi 16: lr_critic 0.000430, lr_actor 0.000070, lr_alpha 0.000070
+
+failure in step 1516 of episode 17
+
+epi 17: travel 39.438km, SOC 0.9197, FCS-SOH 0.999491, Bat-SOH 0.999297
+epi 17: H2_100km 5233.1g, eq_H2_100km 7152.7g, money_100km ￥855.87
+epi 17: ep_r -181.728, c-loss1 345717.5529, c-loss2 353678.2702, a-loss 51554.2195, en-loss -0.1914
+epi 17: lr_critic 0.000454, lr_actor 0.000071, lr_alpha 0.000071
+
+failure in step 2520 of episode 18
+
+epi 18: travel 39.438km, SOC -0.0703, FCS-SOH 0.999308, Bat-SOH 0.999150
+epi 18: H2_100km 3173.2g, eq_H2_100km 5850.2g, money_100km ￥918.67
+epi 18: ep_r -207.945, c-loss1 324931.0649, c-loss2 331746.4946, a-loss 48591.5104, en-loss -0.0480
+epi 18: lr_critic 0.000478, lr_actor 0.000073, lr_alpha 0.000073
+
+failure in step 2779 of episode 19
+
+epi 19: travel 39.438km, SOC 0.0032, FCS-SOH 0.999240, Bat-SOH 0.999220
+epi 19: H2_100km 3287.7g, eq_H2_100km 6081.2g, money_100km ￥958.95
+epi 19: ep_r -129.421, c-loss1 332569.0897, c-loss2 337845.9657, a-loss 47013.6929, en-loss -0.0744
+epi 19: lr_critic 0.000501, lr_actor 0.000074, lr_alpha 0.000074
+
+failure in step 2629 of episode 20
+
+epi 20: travel 39.438km, SOC -0.0373, FCS-SOH 0.999288, Bat-SOH 0.999194
+epi 20: H2_100km 3233.9g, eq_H2_100km 5950.1g, money_100km ￥926.73
+epi 20: ep_r -166.519, c-loss1 321711.1144, c-loss2 327060.5689, a-loss 43934.9305, en-loss -0.0361
+epi 20: lr_critic 0.000525, lr_actor 0.000075, lr_alpha 0.000075
+
+failure in step 1714 of episode 21
+
+epi 21: travel 39.438km, SOC -0.1597, FCS-SOH 0.999687, Bat-SOH 0.998440
+epi 21: H2_100km 3145.0g, eq_H2_100km 5818.9g, money_100km ￥811.92
+epi 21: ep_r -384.711, c-loss1 297616.7324, c-loss2 302762.8667, a-loss 41289.8143, en-loss -0.0644
+epi 21: lr_critic 0.000549, lr_actor 0.000076, lr_alpha 0.000076
+
+failure in step 2064 of episode 22
+
+epi 22: travel 39.438km, SOC -0.1284, FCS-SOH 0.999673, Bat-SOH 0.998656
+epi 22: H2_100km 3192.5g, eq_H2_100km 5833.9g, money_100km ￥770.23
+epi 22: ep_r -362.680, c-loss1 311895.4909, c-loss2 316784.9378, a-loss 40519.5660, en-loss -0.0156
+epi 22: lr_critic 0.000572, lr_actor 0.000077, lr_alpha 0.000077
+
+failure in step 2270 of episode 23
+
+epi 23: travel 39.438km, SOC -0.0572, FCS-SOH 0.999551, Bat-SOH 0.999067
+epi 23: H2_100km 3293.4g, eq_H2_100km 5886.8g, money_100km ￥764.38
+epi 23: ep_r -290.283, c-loss1 313770.2006, c-loss2 319108.5511, a-loss 39079.1096, en-loss 0.0566
+epi 23: lr_critic 0.000596, lr_actor 0.000079, lr_alpha 0.000079
+
+failure in step 2281 of episode 24
+
+epi 24: travel 39.438km, SOC -0.0263, FCS-SOH 0.999564, Bat-SOH 0.999157
+epi 24: H2_100km 3361.8g, eq_H2_100km 5859.1g, money_100km ￥735.17
+epi 24: ep_r -267.774, c-loss1 309415.6752, c-loss2 313136.4039, a-loss 36924.3204, en-loss 0.1363
+epi 24: lr_critic 0.000620, lr_actor 0.000080, lr_alpha 0.000080
+
+failure in step 2713 of episode 25
+
+epi 25: travel 39.438km, SOC 0.1079, FCS-SOH 0.999313, Bat-SOH 0.999253
+epi 25: H2_100km 3514.3g, eq_H2_100km 6045.8g, money_100km ￥907.91
+epi 25: ep_r -99.916, c-loss1 306038.7036, c-loss2 308357.5060, a-loss 34713.9503, en-loss 0.2145
+epi 25: lr_critic 0.000644, lr_actor 0.000081, lr_alpha 0.000081
+
+failure in step 2711 of episode 26
+
+epi 26: travel 39.438km, SOC 0.0710, FCS-SOH 0.999312, Bat-SOH 0.999281
+epi 26: H2_100km 3444.1g, eq_H2_100km 5999.2g, money_100km ￥896.92
+epi 26: ep_r -105.085, c-loss1 286755.5224, c-loss2 289639.2016, a-loss 31601.9098, en-loss 0.2437
+epi 26: lr_critic 0.000667, lr_actor 0.000082, lr_alpha 0.000082
+
+failure in step 2504 of episode 27
+
+epi 27: travel 39.438km, SOC 0.0646, FCS-SOH 0.999446, Bat-SOH 0.999291
+epi 27: H2_100km 3478.2g, eq_H2_100km 5840.8g, money_100km ￥796.02
+epi 27: ep_r -166.422, c-loss1 282408.8278, c-loss2 284936.0646, a-loss 28782.0155, en-loss -0.0098
+epi 27: lr_critic 0.000691, lr_actor 0.000084, lr_alpha 0.000084
+
+failure in step 2522 of episode 28
+
+epi 28: travel 39.438km, SOC 0.0417, FCS-SOH 0.999519, Bat-SOH 0.999287
+epi 28: H2_100km 3458.2g, eq_H2_100km 5753.2g, money_100km ￥741.04
+epi 28: ep_r -167.238, c-loss1 266871.6560, c-loss2 268898.6457, a-loss 26254.4207, en-loss 0.1370
+epi 28: lr_critic 0.000715, lr_actor 0.000085, lr_alpha 0.000085
+
+failure in step 2585 of episode 29
+
+epi 29: travel 39.438km, SOC 0.0391, FCS-SOH 0.999445, Bat-SOH 0.999275
+epi 29: H2_100km 3420.1g, eq_H2_100km 5840.0g, money_100km ￥796.30
+epi 29: ep_r -151.692, c-loss1 248395.5117, c-loss2 249246.5122, a-loss 25109.8748, en-loss 0.1237
+epi 29: lr_critic 0.000739, lr_actor 0.000086, lr_alpha 0.000086
+
+failure in step 2530 of episode 30
+
+epi 30: travel 39.438km, SOC 0.0413, FCS-SOH 0.999468, Bat-SOH 0.999258
+epi 30: H2_100km 3441.3g, eq_H2_100km 5874.6g, money_100km ￥785.67
+epi 30: ep_r -166.853, c-loss1 264525.0629, c-loss2 266351.1187, a-loss 25105.3919, en-loss 0.0696
+epi 30: lr_critic 0.000763, lr_actor 0.000088, lr_alpha 0.000088
+
+failure in step 2720 of episode 31
+
+epi 31: travel 39.438km, SOC 0.0582, FCS-SOH 0.999356, Bat-SOH 0.999305
+epi 31: H2_100km 3421.1g, eq_H2_100km 5913.8g, money_100km ￥856.28
+epi 31: ep_r -118.368, c-loss1 279445.9773, c-loss2 281041.5899, a-loss 24705.2843, en-loss 0.0443
+epi 31: lr_critic 0.000786, lr_actor 0.000089, lr_alpha 0.000089
+
+failure in step 2554 of episode 32
+
+epi 32: travel 39.438km, SOC 0.0762, FCS-SOH 0.999456, Bat-SOH 0.999293
+epi 32: H2_100km 3493.6g, eq_H2_100km 5909.4g, money_100km ￥788.07
+epi 32: ep_r -144.643, c-loss1 271136.7524, c-loss2 273006.7992, a-loss 24405.7980, en-loss -0.0094
+epi 32: lr_critic 0.000810, lr_actor 0.000090, lr_alpha 0.000090
+
+failure in step 2724 of episode 33
+
+epi 33: travel 39.438km, SOC 0.0569, FCS-SOH 0.999386, Bat-SOH 0.999285
+epi 33: H2_100km 3422.1g, eq_H2_100km 5915.2g, money_100km ￥839.17
+epi 33: ep_r -109.331, c-loss1 234154.0724, c-loss2 236299.9363, a-loss 22891.3683, en-loss 0.0559
+epi 33: lr_critic 0.000834, lr_actor 0.000091, lr_alpha 0.000091
+
+failure in step 2729 of episode 34
+
+epi 34: travel 39.438km, SOC 0.0709, FCS-SOH 0.999395, Bat-SOH 0.999340
+epi 34: H2_100km 3455.8g, eq_H2_100km 5881.4g, money_100km ￥821.11
+epi 34: ep_r -107.985, c-loss1 211692.7474, c-loss2 214856.0842, a-loss 20621.5151, en-loss 0.2210
+epi 34: lr_critic 0.000858, lr_actor 0.000093, lr_alpha 0.000093
+
+failure in step 2582 of episode 35
+
+epi 35: travel 39.438km, SOC 0.0686, FCS-SOH 0.999522, Bat-SOH 0.999326
+epi 35: H2_100km 3519.8g, eq_H2_100km 5831.6g, money_100km ￥732.50
+epi 35: ep_r -132.686, c-loss1 184251.6469, c-loss2 187197.4876, a-loss 18754.9063, en-loss 0.2158
+epi 35: lr_critic 0.000881, lr_actor 0.000094, lr_alpha 0.000094
+
+failure in step 2789 of episode 36
+
+epi 36: travel 39.438km, SOC 0.0781, FCS-SOH 0.999371, Bat-SOH 0.999267
+epi 36: H2_100km 3452.1g, eq_H2_100km 6042.3g, money_100km ￥856.75
+epi 36: ep_r -72.753, c-loss1 175733.4769, c-loss2 178292.6020, a-loss 17382.0389, en-loss 0.2389
+epi 36: lr_critic 0.000905, lr_actor 0.000095, lr_alpha 0.000095
+
+failure in step 2794 of episode 37
+
+epi 37: travel 39.438km, SOC 0.0301, FCS-SOH 0.999364, Bat-SOH 0.999200
+epi 37: H2_100km 3360.9g, eq_H2_100km 6043.1g, money_100km ￥874.46
+epi 37: ep_r -114.145, c-loss1 174448.3978, c-loss2 177848.3681, a-loss 16605.1608, en-loss 0.2334
+epi 37: lr_critic 0.000929, lr_actor 0.000096, lr_alpha 0.000096
+
+failure in step 2786 of episode 38
+
+epi 38: travel 39.438km, SOC 0.0895, FCS-SOH 0.999409, Bat-SOH 0.999266
+epi 38: H2_100km 3487.4g, eq_H2_100km 6036.0g, money_100km ￥829.69
+epi 38: ep_r -80.319, c-loss1 174981.8920, c-loss2 178929.0234, a-loss 16473.6652, en-loss 0.0690
+epi 38: lr_critic 0.000953, lr_actor 0.000098, lr_alpha 0.000098
+
+failure in step 2731 of episode 39
+
+epi 39: travel 39.438km, SOC 0.1211, FCS-SOH 0.999440, Bat-SOH 0.999235
+epi 39: H2_100km 3575.6g, eq_H2_100km 6134.1g, money_100km ￥819.96
+epi 39: ep_r -73.121, c-loss1 169994.1333, c-loss2 173759.6890, a-loss 16008.6637, en-loss -0.0521
+epi 39: lr_critic 0.000976, lr_actor 0.000099, lr_alpha 0.000099
+
+failure in step 2642 of episode 40
+
+epi 40: travel 39.438km, SOC 0.1134, FCS-SOH 0.999533, Bat-SOH 0.999224
+epi 40: H2_100km 3598.0g, eq_H2_100km 6121.4g, money_100km ￥756.96
+epi 40: ep_r -96.480, c-loss1 162162.4642, c-loss2 165259.7778, a-loss 15311.8929, en-loss -0.0477
+epi 40: lr_critic 0.001000, lr_actor 0.000100, lr_alpha 0.000100
+
+failure in step 2582 of episode 41
+
+epi 41: travel 39.438km, SOC 0.1022, FCS-SOH 0.999587, Bat-SOH 0.999235
+epi 41: H2_100km 3594.8g, eq_H2_100km 6034.9g, money_100km ￥711.85
+epi 41: ep_r -119.654, c-loss1 169675.0876, c-loss2 173591.1812, a-loss 14853.6029, en-loss -0.0262
+epi 41: lr_critic 0.000976, lr_actor 0.000099, lr_alpha 0.000099
+
+failure in step 2720 of episode 42
+
+epi 42: travel 39.438km, SOC 0.1051, FCS-SOH 0.999502, Bat-SOH 0.999214
+epi 42: H2_100km 3556.7g, eq_H2_100km 6136.1g, money_100km ￥780.46
+epi 42: ep_r -82.191, c-loss1 184840.5192, c-loss2 188957.2614, a-loss 14713.1975, en-loss 0.0054
+epi 42: lr_critic 0.000953, lr_actor 0.000098, lr_alpha 0.000098
+
+failure in step 2588 of episode 43
+
+epi 43: travel 39.438km, SOC 0.0569, FCS-SOH 0.999576, Bat-SOH 0.999264
+epi 43: H2_100km 3511.6g, eq_H2_100km 6015.8g, money_100km ￥709.16
+epi 43: ep_r -120.265, c-loss1 193733.5940, c-loss2 198618.8917, a-loss 14310.1994, en-loss -0.0192
+epi 43: lr_critic 0.000929, lr_actor 0.000096, lr_alpha 0.000096
+
+failure in step 2698 of episode 44
+
+epi 44: travel 39.438km, SOC 0.1116, FCS-SOH 0.999559, Bat-SOH 0.999204
+epi 44: H2_100km 3594.7g, eq_H2_100km 6044.3g, money_100km ￥741.57
+epi 44: ep_r -85.402, c-loss1 210352.0200, c-loss2 214779.6919, a-loss 14048.0706, en-loss -0.0560
+epi 44: lr_critic 0.000905, lr_actor 0.000095, lr_alpha 0.000095
+
+failure in step 2338 of episode 45
+
+epi 45: travel 39.438km, SOC 0.0701, FCS-SOH 0.999741, Bat-SOH 0.999235
+epi 45: H2_100km 3636.4g, eq_H2_100km 5937.4g, money_100km ￥600.22
+epi 45: ep_r -203.005, c-loss1 236682.7916, c-loss2 242500.0045, a-loss 14119.5455, en-loss -0.0308
+epi 45: lr_critic 0.000881, lr_actor 0.000094, lr_alpha 0.000094
+
+failure in step 2447 of episode 46
+
+epi 46: travel 39.438km, SOC 0.0528, FCS-SOH 0.999629, Bat-SOH 0.999051
+epi 46: H2_100km 3554.4g, eq_H2_100km 6028.4g, money_100km ￥725.47
+epi 46: ep_r -184.135, c-loss1 259502.5613, c-loss2 264226.4641, a-loss 14978.6961, en-loss -0.1517
+epi 46: lr_critic 0.000858, lr_actor 0.000093, lr_alpha 0.000093
+
+failure in step 2543 of episode 47
+
+epi 47: travel 39.438km, SOC 0.0366, FCS-SOH 0.999552, Bat-SOH 0.999091
+epi 47: H2_100km 3471.2g, eq_H2_100km 6000.5g, money_100km ￥769.16
+epi 47: ep_r -159.613, c-loss1 276562.0309, c-loss2 281810.2060, a-loss 15456.9230, en-loss -0.0269
+epi 47: lr_critic 0.000834, lr_actor 0.000091, lr_alpha 0.000091
+
+failure in step 2603 of episode 48
+
+epi 48: travel 39.438km, SOC 0.1148, FCS-SOH 0.999526, Bat-SOH 0.999088
+epi 48: H2_100km 3599.5g, eq_H2_100km 6180.1g, money_100km ￥795.60
+epi 48: ep_r -106.906, c-loss1 276925.9277, c-loss2 281532.9193, a-loss 15694.2349, en-loss -0.1039
+epi 48: lr_critic 0.000810, lr_actor 0.000090, lr_alpha 0.000090
+
+failure in step 2698 of episode 49
+
+epi 49: travel 39.438km, SOC 0.0494, FCS-SOH 0.999451, Bat-SOH 0.999166
+epi 49: H2_100km 3453.6g, eq_H2_100km 6226.0g, money_100km ￥824.69
+epi 49: ep_r -131.789, c-loss1 299795.2861, c-loss2 303495.8307, a-loss 15955.9630, en-loss -0.0656
+epi 49: lr_critic 0.000786, lr_actor 0.000089, lr_alpha 0.000089
+
+failure in step 2591 of episode 50
+
+epi 50: travel 39.438km, SOC 0.0948, FCS-SOH 0.999470, Bat-SOH 0.999089
+epi 50: H2_100km 3533.0g, eq_H2_100km 6353.2g, money_100km ￥833.51
+epi 50: ep_r -121.196, c-loss1 306792.9067, c-loss2 310568.3370, a-loss 16029.5534, en-loss 0.0783
+epi 50: lr_critic 0.000763, lr_actor 0.000088, lr_alpha 0.000088
+
+failure in step 2534 of episode 51
+
+epi 51: travel 39.438km, SOC 0.0906, FCS-SOH 0.999504, Bat-SOH 0.999045
+epi 51: H2_100km 3550.3g, eq_H2_100km 6327.2g, money_100km ￥820.51
+epi 51: ep_r -138.412, c-loss1 294827.2917, c-loss2 297890.0224, a-loss 16412.8644, en-loss -0.0555
+epi 51: lr_critic 0.000739, lr_actor 0.000086, lr_alpha 0.000086
+
+failure in step 2580 of episode 52
+
+epi 52: travel 39.438km, SOC 0.0693, FCS-SOH 0.999492, Bat-SOH 0.999130
+epi 52: H2_100km 3500.7g, eq_H2_100km 6252.7g, money_100km ￥804.67
+epi 52: ep_r -139.032, c-loss1 282376.8705, c-loss2 285520.2304, a-loss 16732.9478, en-loss -0.0537
+epi 52: lr_critic 0.000715, lr_actor 0.000085, lr_alpha 0.000085
+
+failure in step 2550 of episode 53
+
+epi 53: travel 39.438km, SOC 0.1067, FCS-SOH 0.999493, Bat-SOH 0.999064
+epi 53: H2_100km 3573.0g, eq_H2_100km 6292.2g, money_100km ￥825.75
+epi 53: ep_r -130.430, c-loss1 286822.1290, c-loss2 288989.1207, a-loss 16840.5289, en-loss -0.1264
+epi 53: lr_critic 0.000691, lr_actor 0.000084, lr_alpha 0.000084
+
+failure in step 2582 of episode 54
+
+epi 54: travel 39.438km, SOC 0.1163, FCS-SOH 0.999484, Bat-SOH 0.999042
+epi 54: H2_100km 3602.0g, eq_H2_100km 6198.1g, money_100km ￥839.26
+epi 54: ep_r -119.020, c-loss1 290163.2863, c-loss2 291633.2189, a-loss 17036.0422, en-loss -0.0972
+epi 54: lr_critic 0.000667, lr_actor 0.000082, lr_alpha 0.000082
+
+failure in step 2554 of episode 55
+
+epi 55: travel 39.438km, SOC 0.1051, FCS-SOH 0.999492, Bat-SOH 0.999077
+epi 55: H2_100km 3575.5g, eq_H2_100km 6213.3g, money_100km ￥823.41
+epi 55: ep_r -127.259, c-loss1 292000.3400, c-loss2 293183.5135, a-loss 17173.4565, en-loss -0.0330
+epi 55: lr_critic 0.000644, lr_actor 0.000081, lr_alpha 0.000081
+
+failure in step 2583 of episode 56
+
+epi 56: travel 39.438km, SOC 0.1177, FCS-SOH 0.999466, Bat-SOH 0.999152
+epi 56: H2_100km 3603.9g, eq_H2_100km 6209.5g, money_100km ￥825.65
+epi 56: ep_r -120.543, c-loss1 302545.4505, c-loss2 303971.7275, a-loss 17401.0194, en-loss -0.2026
+epi 56: lr_critic 0.000620, lr_actor 0.000080, lr_alpha 0.000080
+
+failure in step 2518 of episode 57
+
+epi 57: travel 39.438km, SOC 0.1145, FCS-SOH 0.999498, Bat-SOH 0.999046
+epi 57: H2_100km 3606.0g, eq_H2_100km 6218.3g, money_100km ￥826.86
+epi 57: ep_r -140.103, c-loss1 292307.3750, c-loss2 292901.5527, a-loss 17043.2325, en-loss -0.0749
+epi 57: lr_critic 0.000596, lr_actor 0.000079, lr_alpha 0.000079
+
+failure in step 2529 of episode 58
+
+epi 58: travel 39.438km, SOC 0.1199, FCS-SOH 0.999506, Bat-SOH 0.999047
+epi 58: H2_100km 3621.5g, eq_H2_100km 6216.0g, money_100km ￥822.61
+epi 58: ep_r -136.012, c-loss1 285327.3250, c-loss2 285689.2331, a-loss 16581.1109, en-loss -0.1135
+epi 58: lr_critic 0.000572, lr_actor 0.000077, lr_alpha 0.000077
+
+failure in step 2489 of episode 59
+
+epi 59: travel 39.438km, SOC 0.1145, FCS-SOH 0.999552, Bat-SOH 0.999046
+epi 59: H2_100km 3618.7g, eq_H2_100km 6146.0g, money_100km ￥788.25
+epi 59: ep_r -149.536, c-loss1 297508.4510, c-loss2 299385.4737, a-loss 16367.5907, en-loss -0.0077
+epi 59: lr_critic 0.000549, lr_actor 0.000076, lr_alpha 0.000076
+
+failure in step 2483 of episode 60
+
+epi 60: travel 39.438km, SOC 0.1230, FCS-SOH 0.999541, Bat-SOH 0.999036
+epi 60: H2_100km 3642.0g, eq_H2_100km 6207.8g, money_100km ￥800.46
+epi 60: ep_r -154.709, c-loss1 309199.7701, c-loss2 311199.2158, a-loss 16618.7000, en-loss 0.0058
+epi 60: lr_critic 0.000525, lr_actor 0.000075, lr_alpha 0.000075
+
+failure in step 2510 of episode 61
+
+epi 61: travel 39.438km, SOC 0.1329, FCS-SOH 0.999499, Bat-SOH 0.999089
+epi 61: H2_100km 3647.2g, eq_H2_100km 6194.1g, money_100km ￥819.17
+epi 61: ep_r -143.460, c-loss1 316253.9380, c-loss2 317927.8107, a-loss 16965.0425, en-loss 0.0158
+epi 61: lr_critic 0.000501, lr_actor 0.000074, lr_alpha 0.000074
+
+failure in step 2485 of episode 62
+
+epi 62: travel 39.438km, SOC 0.1161, FCS-SOH 0.999502, Bat-SOH 0.999097
+epi 62: H2_100km 3614.7g, eq_H2_100km 6147.9g, money_100km ￥813.43
+epi 62: ep_r -153.970, c-loss1 331080.2592, c-loss2 332592.2508, a-loss 17177.2016, en-loss 0.0932
+epi 62: lr_critic 0.000478, lr_actor 0.000073, lr_alpha 0.000073
+
+failure in step 2482 of episode 63
+
+epi 63: travel 39.438km, SOC 0.1130, FCS-SOH 0.999502, Bat-SOH 0.999125
+epi 63: H2_100km 3609.7g, eq_H2_100km 6141.9g, money_100km ￥805.66
+epi 63: ep_r -156.058, c-loss1 343712.5059, c-loss2 345985.3254, a-loss 17263.6045, en-loss 0.1908
+epi 63: lr_critic 0.000454, lr_actor 0.000071, lr_alpha 0.000071
+
+failure in step 2538 of episode 64
+
+epi 64: travel 39.438km, SOC 0.1404, FCS-SOH 0.999495, Bat-SOH 0.999211
+epi 64: H2_100km 3648.6g, eq_H2_100km 6088.0g, money_100km ￥790.24
+epi 64: ep_r -134.476, c-loss1 359286.3994, c-loss2 361502.9830, a-loss 17348.0501, en-loss -0.0471
+epi 64: lr_critic 0.000430, lr_actor 0.000070, lr_alpha 0.000070
+
+failure in step 2497 of episode 65
+
+epi 65: travel 39.438km, SOC 0.1181, FCS-SOH 0.999491, Bat-SOH 0.999184
+epi 65: H2_100km 3614.8g, eq_H2_100km 6060.9g, money_100km ￥799.02
+epi 65: ep_r -149.350, c-loss1 361592.3167, c-loss2 364463.2288, a-loss 17357.3348, en-loss -0.0165
+epi 65: lr_critic 0.000406, lr_actor 0.000069, lr_alpha 0.000069
+
+failure in step 2611 of episode 66
+
+epi 66: travel 39.438km, SOC 0.1298, FCS-SOH 0.999411, Bat-SOH 0.999280
+epi 66: H2_100km 3598.6g, eq_H2_100km 6061.6g, money_100km ￥832.57
+epi 66: ep_r -110.892, c-loss1 372464.7539, c-loss2 376188.8221, a-loss 17552.7090, en-loss -0.0017
+epi 66: lr_critic 0.000383, lr_actor 0.000068, lr_alpha 0.000068
+
+failure in step 2516 of episode 67
+
+epi 67: travel 39.438km, SOC 0.1054, FCS-SOH 0.999497, Bat-SOH 0.999200
+epi 67: H2_100km 3582.2g, eq_H2_100km 6000.3g, money_100km ￥786.85
+epi 67: ep_r -145.262, c-loss1 372065.2870, c-loss2 376179.8092, a-loss 17373.6298, en-loss 0.1059
+epi 67: lr_critic 0.000359, lr_actor 0.000066, lr_alpha 0.000066
+
+failure in step 2708 of episode 68
+
+epi 68: travel 39.438km, SOC 0.1683, FCS-SOH 0.999380, Bat-SOH 0.999276
+epi 68: H2_100km 3655.8g, eq_H2_100km 6092.3g, money_100km ￥860.76
+epi 68: ep_r -84.918, c-loss1 378745.8129, c-loss2 384259.9585, a-loss 17474.3184, en-loss -0.0594
+epi 68: lr_critic 0.000335, lr_actor 0.000065, lr_alpha 0.000065
+
+failure in step 2623 of episode 69
+
+epi 69: travel 39.438km, SOC 0.1539, FCS-SOH 0.999438, Bat-SOH 0.999247
+epi 69: H2_100km 3660.1g, eq_H2_100km 6030.0g, money_100km ￥824.78
+epi 69: ep_r -102.561, c-loss1 370248.3788, c-loss2 375567.9882, a-loss 17124.6600, en-loss -0.0240
+epi 69: lr_critic 0.000311, lr_actor 0.000064, lr_alpha 0.000064
+
+failure in step 2647 of episode 70
+
+epi 70: travel 39.438km, SOC 0.1607, FCS-SOH 0.999401, Bat-SOH 0.999239
+epi 70: H2_100km 3669.8g, eq_H2_100km 6072.9g, money_100km ￥854.37
+epi 70: ep_r -93.488, c-loss1 371513.5240, c-loss2 377032.1535, a-loss 16771.3274, en-loss 0.0085
+epi 70: lr_critic 0.000287, lr_actor 0.000063, lr_alpha 0.000063
+
+failure in step 2645 of episode 71
+
+epi 71: travel 39.438km, SOC 0.1565, FCS-SOH 0.999418, Bat-SOH 0.999216
+epi 71: H2_100km 3655.9g, eq_H2_100km 6071.0g, money_100km ￥845.99
+epi 71: ep_r -94.569, c-loss1 365560.6088, c-loss2 370789.1765, a-loss 16310.1568, en-loss 0.0337
+epi 71: lr_critic 0.000264, lr_actor 0.000061, lr_alpha 0.000061
+
+failure in step 2629 of episode 72
+
+epi 72: travel 39.438km, SOC 0.1517, FCS-SOH 0.999420, Bat-SOH 0.999216
+epi 72: H2_100km 3657.4g, eq_H2_100km 6073.6g, money_100km ￥845.35
+epi 72: ep_r -102.645, c-loss1 358833.9041, c-loss2 364019.0765, a-loss 15831.2081, en-loss -0.0451
+epi 72: lr_critic 0.000240, lr_actor 0.000060, lr_alpha 0.000060
+
+failure in step 2609 of episode 73
+
+epi 73: travel 39.438km, SOC 0.1428, FCS-SOH 0.999422, Bat-SOH 0.999186
+epi 73: H2_100km 3645.4g, eq_H2_100km 6091.2g, money_100km ￥851.52
+epi 73: ep_r -106.711, c-loss1 362659.8075, c-loss2 368521.2500, a-loss 15583.3012, en-loss 0.0312
+epi 73: lr_critic 0.000216, lr_actor 0.000059, lr_alpha 0.000059
+
+failure in step 2604 of episode 74
+
+epi 74: travel 39.438km, SOC 0.1429, FCS-SOH 0.999438, Bat-SOH 0.999154
+epi 74: H2_100km 3646.4g, eq_H2_100km 6107.1g, money_100km ￥847.42
+epi 74: ep_r -109.151, c-loss1 358971.7950, c-loss2 365081.5779, a-loss 15316.3586, en-loss 0.0130
+epi 74: lr_critic 0.000192, lr_actor 0.000058, lr_alpha 0.000058
+
+failure in step 2599 of episode 75
+
+epi 75: travel 39.438km, SOC 0.1339, FCS-SOH 0.999431, Bat-SOH 0.999169
+epi 75: H2_100km 3624.1g, eq_H2_100km 6087.8g, money_100km ￥848.19
+epi 75: ep_r -112.382, c-loss1 337578.7574, c-loss2 344174.8217, a-loss 14797.7287, en-loss 0.0884
+epi 75: lr_critic 0.000169, lr_actor 0.000056, lr_alpha 0.000056
+
+failure in step 2717 of episode 76
+
+epi 76: travel 39.438km, SOC 0.1670, FCS-SOH 0.999370, Bat-SOH 0.999230
+epi 76: H2_100km 3670.2g, eq_H2_100km 6179.9g, money_100km ￥880.18
+epi 76: ep_r -82.920, c-loss1 338022.3876, c-loss2 344931.8706, a-loss 14639.4923, en-loss 0.0876
+epi 76: lr_critic 0.000145, lr_actor 0.000055, lr_alpha 0.000055
+
+failure in step 2608 of episode 77
+
+epi 77: travel 39.438km, SOC 0.1415, FCS-SOH 0.999437, Bat-SOH 0.999151
+epi 77: H2_100km 3640.6g, eq_H2_100km 6131.9g, money_100km ￥849.31
+epi 77: ep_r -108.952, c-loss1 325319.5615, c-loss2 332312.5704, a-loss 14032.9908, en-loss 0.0139
+epi 77: lr_critic 0.000121, lr_actor 0.000054, lr_alpha 0.000054
+
+failure in step 2607 of episode 78
+
+epi 78: travel 39.438km, SOC 0.1416, FCS-SOH 0.999438, Bat-SOH 0.999183
+epi 78: H2_100km 3637.7g, eq_H2_100km 6151.2g, money_100km ￥841.85
+epi 78: ep_r -108.758, c-loss1 333785.5976, c-loss2 340965.9989, a-loss 13952.7734, en-loss 0.0517
+epi 78: lr_critic 0.000097, lr_actor 0.000052, lr_alpha 0.000052
+
+failure in step 2758 of episode 79
+
+epi 79: travel 39.438km, SOC 0.1929, FCS-SOH 0.999362, Bat-SOH 0.999236
+epi 79: H2_100km 3695.9g, eq_H2_100km 6237.5g, money_100km ￥886.23
+epi 79: ep_r -58.698, c-loss1 326848.9833, c-loss2 334047.4316, a-loss 13705.9937, en-loss 0.0496
+epi 79: lr_critic 0.000074, lr_actor 0.000051, lr_alpha 0.000051
+
+failure in step 2731 of episode 80
+
+epi 80: travel 39.438km, SOC 0.1863, FCS-SOH 0.999363, Bat-SOH 0.999228
+epi 80: H2_100km 3701.7g, eq_H2_100km 6234.2g, money_100km ￥887.34
+epi 80: ep_r -67.859, c-loss1 327223.0571, c-loss2 334761.5164, a-loss 13306.3344, en-loss -0.0060
+epi 80: lr_critic 0.000050, lr_actor 0.000050, lr_alpha 0.000050
+
+epi 81: travel 39.438km, SOC 0.2051, FCS-SOH 0.999336, Bat-SOH 0.999236
+epi 81: H2_100km 3701.5g, eq_H2_100km 6268.7g, money_100km ￥904.66
+epi 81: ep_r -37.205, c-loss1 334226.7536, c-loss2 341014.3421, a-loss 13085.1980, en-loss 0.0157
+epi 81: lr_critic 0.000062, lr_actor 0.000051, lr_alpha 0.000051
+
+epi 82: travel 39.438km, SOC 0.2308, FCS-SOH 0.999299, Bat-SOH 0.999208
+epi 82: H2_100km 3740.9g, eq_H2_100km 6313.9g, money_100km ￥941.67
+epi 82: ep_r -24.565, c-loss1 316103.7991, c-loss2 321818.0670, a-loss 12672.9875, en-loss 0.0320
+epi 82: lr_critic 0.000074, lr_actor 0.000051, lr_alpha 0.000051
+
+epi 83: travel 39.438km, SOC 0.2721, FCS-SOH 0.999287, Bat-SOH 0.999258
+epi 83: H2_100km 3802.5g, eq_H2_100km 6361.9g, money_100km ￥941.79
+epi 83: ep_r -25.005, c-loss1 305723.8044, c-loss2 311558.6457, a-loss 12185.1745, en-loss 0.0696
+epi 83: lr_critic 0.000086, lr_actor 0.000052, lr_alpha 0.000052
+
+epi 84: travel 39.438km, SOC 0.3189, FCS-SOH 0.999298, Bat-SOH 0.999270
+epi 84: H2_100km 3891.4g, eq_H2_100km 6412.6g, money_100km ￥936.29
+epi 84: ep_r -23.620, c-loss1 282446.2833, c-loss2 286276.7535, a-loss 11573.9831, en-loss 0.0588
+epi 84: lr_critic 0.000097, lr_actor 0.000052, lr_alpha 0.000052
+
+epi 85: travel 39.438km, SOC 0.3576, FCS-SOH 0.999307, Bat-SOH 0.999249
+epi 85: H2_100km 3977.0g, eq_H2_100km 6375.7g, money_100km ￥938.06
+epi 85: ep_r -20.280, c-loss1 262722.1340, c-loss2 266356.6906, a-loss 10830.7698, en-loss 0.0601
+epi 85: lr_critic 0.000109, lr_actor 0.000053, lr_alpha 0.000053
+
+epi 86: travel 39.438km, SOC 0.3800, FCS-SOH 0.999262, Bat-SOH 0.999301
+epi 86: H2_100km 4008.1g, eq_H2_100km 6415.3g, money_100km ￥959.62
+epi 86: ep_r -20.530, c-loss1 233301.9377, c-loss2 235784.1687, a-loss 9980.8508, en-loss 0.0824
+epi 86: lr_critic 0.000121, lr_actor 0.000054, lr_alpha 0.000054
+
+epi 87: travel 39.438km, SOC 0.3633, FCS-SOH 0.999407, Bat-SOH 0.999279
+epi 87: H2_100km 4053.1g, eq_H2_100km 6300.0g, money_100km ￥861.37
+epi 87: ep_r -25.416, c-loss1 214142.7832, c-loss2 215762.7033, a-loss 9057.8258, en-loss 0.0605
+epi 87: lr_critic 0.000133, lr_actor 0.000054, lr_alpha 0.000054
+
+failure in step 2721 of episode 88
+
+epi 88: travel 39.438km, SOC 0.3273, FCS-SOH 0.999490, Bat-SOH 0.999247
+epi 88: H2_100km 4044.8g, eq_H2_100km 6301.7g, money_100km ￥807.45
+epi 88: ep_r -70.540, c-loss1 200205.9764, c-loss2 201626.3008, a-loss 8403.1586, en-loss 0.0061
+epi 88: lr_critic 0.000145, lr_actor 0.000055, lr_alpha 0.000055
+
+failure in step 2602 of episode 89
+
+epi 89: travel 39.438km, SOC 0.2759, FCS-SOH 0.999541, Bat-SOH 0.999236
+epi 89: H2_100km 3962.0g, eq_H2_100km 6267.7g, money_100km ￥765.47
+epi 89: ep_r -100.306, c-loss1 192935.6007, c-loss2 194249.0017, a-loss 7993.0668, en-loss -0.0159
+epi 89: lr_critic 0.000157, lr_actor 0.000056, lr_alpha 0.000056
+
+failure in step 2591 of episode 90
+
+epi 90: travel 39.438km, SOC 0.2775, FCS-SOH 0.999558, Bat-SOH 0.999211
+epi 90: H2_100km 3967.6g, eq_H2_100km 6278.9g, money_100km ￥760.26
+epi 90: ep_r -103.737, c-loss1 189603.3871, c-loss2 190957.6851, a-loss 7852.1615, en-loss -0.0773
+epi 90: lr_critic 0.000169, lr_actor 0.000056, lr_alpha 0.000056
+
+failure in step 2560 of episode 91
+
+epi 91: travel 39.438km, SOC 0.2535, FCS-SOH 0.999556, Bat-SOH 0.999196
+epi 91: H2_100km 3926.6g, eq_H2_100km 6267.5g, money_100km ￥763.15
+epi 91: ep_r -117.639, c-loss1 181438.3705, c-loss2 183551.0488, a-loss 7991.1519, en-loss -0.1458
+epi 91: lr_critic 0.000181, lr_actor 0.000057, lr_alpha 0.000057
+
+failure in step 2579 of episode 92
+
+epi 92: travel 39.438km, SOC 0.2730, FCS-SOH 0.999527, Bat-SOH 0.999128
+epi 92: H2_100km 3951.7g, eq_H2_100km 6332.5g, money_100km ￥804.96
+epi 92: ep_r -115.464, c-loss1 181882.6444, c-loss2 184489.6781, a-loss 8370.0910, en-loss -0.1332
+epi 92: lr_critic 0.000192, lr_actor 0.000058, lr_alpha 0.000058
+
+failure in step 2587 of episode 93
+
+epi 93: travel 39.438km, SOC 0.2983, FCS-SOH 0.999507, Bat-SOH 0.999068
+epi 93: H2_100km 3987.5g, eq_H2_100km 6412.6g, money_100km ￥836.72
+epi 93: ep_r -107.036, c-loss1 193476.3359, c-loss2 195984.2221, a-loss 8743.9388, en-loss -0.1372
+epi 93: lr_critic 0.000204, lr_actor 0.000058, lr_alpha 0.000058
+
+failure in step 2650 of episode 94
+
+epi 94: travel 39.438km, SOC 0.3312, FCS-SOH 0.999466, Bat-SOH 0.999183
+epi 94: H2_100km 4029.2g, eq_H2_100km 6473.7g, money_100km ￥840.17
+epi 94: ep_r -86.730, c-loss1 207841.1469, c-loss2 210805.0070, a-loss 9318.3235, en-loss -0.1151
+epi 94: lr_critic 0.000216, lr_actor 0.000059, lr_alpha 0.000059
+
+failure in step 1493 of episode 95
+
+epi 95: travel 39.438km, SOC 0.6078, FCS-SOH 0.999412, Bat-SOH 0.999379
+epi 95: H2_100km 4523.7g, eq_H2_100km 6938.0g, money_100km ￥855.24
+epi 95: ep_r -189.999, c-loss1 236667.2196, c-loss2 234335.5603, a-loss 9871.2522, en-loss -0.1620
+epi 95: lr_critic 0.000228, lr_actor 0.000059, lr_alpha 0.000059
+
+failure in step 2660 of episode 96
+
+epi 96: travel 39.438km, SOC 0.3486, FCS-SOH 0.999446, Bat-SOH 0.999169
+epi 96: H2_100km 4068.9g, eq_H2_100km 6512.6g, money_100km ￥860.93
+epi 96: ep_r -82.389, c-loss1 262528.6049, c-loss2 263161.3370, a-loss 10376.4510, en-loss -0.2704
+epi 96: lr_critic 0.000240, lr_actor 0.000060, lr_alpha 0.000060
+
+epi 97: travel 39.438km, SOC 0.3865, FCS-SOH 0.999248, Bat-SOH 0.999260
+epi 97: H2_100km 4060.4g, eq_H2_100km 6670.3g, money_100km ￥987.15
+epi 97: ep_r -23.733, c-loss1 293423.6191, c-loss2 295564.1191, a-loss 10807.9514, en-loss -0.0741
+epi 97: lr_critic 0.000252, lr_actor 0.000061, lr_alpha 0.000061
+
+epi 98: travel 39.438km, SOC 0.3843, FCS-SOH 0.999270, Bat-SOH 0.999286
+epi 98: H2_100km 4042.5g, eq_H2_100km 6704.6g, money_100km ￥960.88
+epi 98: ep_r -27.240, c-loss1 309776.9509, c-loss2 312925.8664, a-loss 11044.7374, en-loss -0.1152
+epi 98: lr_critic 0.000264, lr_actor 0.000061, lr_alpha 0.000061
+
+epi 99: travel 39.438km, SOC 0.3840, FCS-SOH 0.999407, Bat-SOH 0.999310
+epi 99: H2_100km 4036.1g, eq_H2_100km 6632.8g, money_100km ￥850.85
+epi 99: ep_r -27.449, c-loss1 311252.8393, c-loss2 314879.7738, a-loss 11218.8219, en-loss -0.1728
+epi 99: lr_critic 0.000276, lr_actor 0.000062, lr_alpha 0.000062
+
+epi 100: travel 39.438km, SOC 0.3690, FCS-SOH 0.999422, Bat-SOH 0.999308
+epi 100: H2_100km 4009.0g, eq_H2_100km 6599.8g, money_100km ￥836.94
+epi 100: ep_r -27.509, c-loss1 291950.8775, c-loss2 295156.3961, a-loss 11196.3456, en-loss -0.1138
+epi 100: lr_critic 0.000287, lr_actor 0.000063, lr_alpha 0.000063
+
+epi 101: travel 39.438km, SOC 0.3751, FCS-SOH 0.999448, Bat-SOH 0.999314
+epi 101: H2_100km 4020.1g, eq_H2_100km 6561.9g, money_100km ￥816.39
+epi 101: ep_r -27.196, c-loss1 260662.0418, c-loss2 263309.6300, a-loss 10793.8033, en-loss -0.0229
+epi 101: lr_critic 0.000299, lr_actor 0.000063, lr_alpha 0.000063
+
+epi 102: travel 39.438km, SOC 0.3712, FCS-SOH 0.999426, Bat-SOH 0.999308
+epi 102: H2_100km 4014.7g, eq_H2_100km 6596.3g, money_100km ￥834.77
+epi 102: ep_r -26.829, c-loss1 229263.9420, c-loss2 231105.9270, a-loss 10204.7833, en-loss 0.0671
+epi 102: lr_critic 0.000311, lr_actor 0.000064, lr_alpha 0.000064
+
+epi 103: travel 39.438km, SOC 0.3737, FCS-SOH 0.999393, Bat-SOH 0.999238
+epi 103: H2_100km 4031.4g, eq_H2_100km 6623.3g, money_100km ￥879.82
+epi 103: ep_r -21.750, c-loss1 204394.7712, c-loss2 206101.8636, a-loss 9426.1424, en-loss 0.1509
+epi 103: lr_critic 0.000323, lr_actor 0.000064, lr_alpha 0.000064
+
+failure in step 2574 of episode 104
+
+epi 104: travel 39.438km, SOC 0.2983, FCS-SOH 0.999563, Bat-SOH 0.998935
+epi 104: H2_100km 3988.5g, eq_H2_100km 6519.5g, money_100km ￥829.03
+epi 104: ep_r -119.447, c-loss1 180708.7623, c-loss2 182080.6548, a-loss 8712.1896, en-loss 0.1609
+epi 104: lr_critic 0.000335, lr_actor 0.000065, lr_alpha 0.000065
+
+failure in step 2577 of episode 105
+
+epi 105: travel 39.438km, SOC 0.2995, FCS-SOH 0.999542, Bat-SOH 0.998953
+epi 105: H2_100km 3998.5g, eq_H2_100km 6540.2g, money_100km ￥841.49
+epi 105: ep_r -118.146, c-loss1 180284.3357, c-loss2 181146.2564, a-loss 8744.6065, en-loss 0.1223
+epi 105: lr_critic 0.000347, lr_actor 0.000066, lr_alpha 0.000066
+
+failure in step 2577 of episode 106
+
+epi 106: travel 39.438km, SOC 0.2940, FCS-SOH 0.999567, Bat-SOH 0.998956
+epi 106: H2_100km 3984.8g, eq_H2_100km 6513.7g, money_100km ￥821.52
+epi 106: ep_r -118.290, c-loss1 178716.5817, c-loss2 180315.7603, a-loss 8897.5906, en-loss 0.0647
+epi 106: lr_critic 0.000359, lr_actor 0.000066, lr_alpha 0.000066
+
+failure in step 2583 of episode 107
+
+epi 107: travel 39.438km, SOC 0.3026, FCS-SOH 0.999522, Bat-SOH 0.999036
+epi 107: H2_100km 3991.9g, eq_H2_100km 6558.8g, money_100km ￥833.59
+epi 107: ep_r -114.474, c-loss1 180118.7132, c-loss2 181456.9732, a-loss 9028.0395, en-loss 0.0489
+epi 107: lr_critic 0.000371, lr_actor 0.000067, lr_alpha 0.000067
+
+failure in step 2640 of episode 108
+
+epi 108: travel 39.438km, SOC 0.3338, FCS-SOH 0.999476, Bat-SOH 0.999124
+epi 108: H2_100km 4029.3g, eq_H2_100km 6625.9g, money_100km ￥848.80
+epi 108: ep_r -92.177, c-loss1 189798.2728, c-loss2 191735.7454, a-loss 9417.4519, en-loss 0.0244
+epi 108: lr_critic 0.000383, lr_actor 0.000068, lr_alpha 0.000068
+
+failure in step 2773 of episode 109
+
+epi 109: travel 39.438km, SOC 0.3755, FCS-SOH 0.999424, Bat-SOH 0.999184
+epi 109: H2_100km 4076.5g, eq_H2_100km 6686.7g, money_100km ￥873.98
+epi 109: ep_r -45.383, c-loss1 196496.3004, c-loss2 197889.7638, a-loss 9643.7134, en-loss -0.0456
+epi 109: lr_critic 0.000394, lr_actor 0.000068, lr_alpha 0.000068
+
+epi 110: travel 39.438km, SOC 0.3934, FCS-SOH 0.999379, Bat-SOH 0.999268
+epi 110: H2_100km 4066.3g, eq_H2_100km 6641.4g, money_100km ￥885.55
+epi 110: ep_r -23.122, c-loss1 221151.4986, c-loss2 222882.7858, a-loss 9742.3579, en-loss -0.0769
+epi 110: lr_critic 0.000406, lr_actor 0.000069, lr_alpha 0.000069
+
+failure in step 2760 of episode 111
+
+epi 111: travel 39.438km, SOC 0.3856, FCS-SOH 0.999437, Bat-SOH 0.999169
+epi 111: H2_100km 4110.0g, eq_H2_100km 6679.7g, money_100km ￥870.85
+epi 111: ep_r -46.683, c-loss1 239846.8660, c-loss2 242165.4992, a-loss 9757.5730, en-loss -0.1423
+epi 111: lr_critic 0.000418, lr_actor 0.000069, lr_alpha 0.000069
+
+failure in step 2770 of episode 112
+
+epi 112: travel 39.438km, SOC 0.3624, FCS-SOH 0.999413, Bat-SOH 0.999101
+epi 112: H2_100km 4065.1g, eq_H2_100km 6683.3g, money_100km ￥902.34
+epi 112: ep_r -44.731, c-loss1 265985.9081, c-loss2 268381.6322, a-loss 9928.1237, en-loss -0.1948
+epi 112: lr_critic 0.000430, lr_actor 0.000070, lr_alpha 0.000070
+
+failure in step 2647 of episode 113
+
+epi 113: travel 39.438km, SOC 0.3367, FCS-SOH 0.999496, Bat-SOH 0.999040
+epi 113: H2_100km 4037.0g, eq_H2_100km 6633.5g, money_100km ￥856.58
+epi 113: ep_r -87.828, c-loss1 286520.8280, c-loss2 289955.0531, a-loss 10244.4750, en-loss -0.2188
+epi 113: lr_critic 0.000442, lr_actor 0.000071, lr_alpha 0.000071
+
+epi 114: travel 39.438km, SOC 0.3737, FCS-SOH 0.999396, Bat-SOH 0.999201
+epi 114: H2_100km 4063.0g, eq_H2_100km 6658.7g, money_100km ￥890.77
+epi 114: ep_r -21.238, c-loss1 338808.2093, c-loss2 342931.7013, a-loss 10752.8039, en-loss -0.2202
+epi 114: lr_critic 0.000454, lr_actor 0.000071, lr_alpha 0.000071
+
+epi 115: travel 39.438km, SOC 0.3942, FCS-SOH 0.999384, Bat-SOH 0.999320
+epi 115: H2_100km 4061.1g, eq_H2_100km 6652.0g, money_100km ￥867.23
+epi 115: ep_r -23.519, c-loss1 343045.0942, c-loss2 347288.1634, a-loss 10993.0335, en-loss -0.2001
+epi 115: lr_critic 0.000466, lr_actor 0.000072, lr_alpha 0.000072
+
+epi 116: travel 39.438km, SOC 0.3864, FCS-SOH 0.999374, Bat-SOH 0.999316
+epi 116: H2_100km 4043.5g, eq_H2_100km 6615.6g, money_100km ￥874.37
+epi 116: ep_r -23.657, c-loss1 317307.0392, c-loss2 321080.6832, a-loss 10629.9120, en-loss -0.0461
+epi 116: lr_critic 0.000478, lr_actor 0.000073, lr_alpha 0.000073
+
+epi 117: travel 39.438km, SOC 0.3947, FCS-SOH 0.999384, Bat-SOH 0.999281
+epi 117: H2_100km 4065.9g, eq_H2_100km 6646.4g, money_100km ￥877.14
+epi 117: ep_r -21.679, c-loss1 317247.1151, c-loss2 320434.0807, a-loss 9846.8607, en-loss 0.0748
+epi 117: lr_critic 0.000489, lr_actor 0.000073, lr_alpha 0.000073
+
+epi 118: travel 39.438km, SOC 0.3737, FCS-SOH 0.999419, Bat-SOH 0.999171
+epi 118: H2_100km 4070.1g, eq_H2_100km 6621.9g, money_100km ￥881.15
+epi 118: ep_r -35.288, c-loss1 282808.6653, c-loss2 285390.1111, a-loss 9020.5687, en-loss 0.1474
+epi 118: lr_critic 0.000501, lr_actor 0.000074, lr_alpha 0.000074
+
+epi 119: travel 39.438km, SOC 0.3969, FCS-SOH 0.999357, Bat-SOH 0.999332
+epi 119: H2_100km 4055.2g, eq_H2_100km 6613.7g, money_100km ￥883.27
+epi 119: ep_r -23.591, c-loss1 254429.3899, c-loss2 257368.3656, a-loss 8295.2947, en-loss 0.1902
+epi 119: lr_critic 0.000513, lr_actor 0.000074, lr_alpha 0.000074
+
+epi 120: travel 39.438km, SOC 0.4150, FCS-SOH 0.999422, Bat-SOH 0.999376
+epi 120: H2_100km 4093.5g, eq_H2_100km 6556.6g, money_100km ￥826.29
+epi 120: ep_r -25.445, c-loss1 217489.6234, c-loss2 219754.0953, a-loss 7617.7606, en-loss 0.2418
+epi 120: lr_critic 0.000525, lr_actor 0.000075, lr_alpha 0.000075
+
+epi 121: travel 39.438km, SOC 0.4234, FCS-SOH 0.999400, Bat-SOH 0.999366
+epi 121: H2_100km 4115.2g, eq_H2_100km 6573.6g, money_100km ￥845.05
+epi 121: ep_r -28.050, c-loss1 164538.3515, c-loss2 166210.4436, a-loss 7097.8752, en-loss 0.2680
+epi 121: lr_critic 0.000513, lr_actor 0.000074, lr_alpha 0.000074
+
+epi 122: travel 39.438km, SOC 0.4260, FCS-SOH 0.999421, Bat-SOH 0.999357
+epi 122: H2_100km 4127.7g, eq_H2_100km 6541.5g, money_100km ￥832.71
+epi 122: ep_r -26.791, c-loss1 143495.9257, c-loss2 144498.8910, a-loss 6811.7235, en-loss 0.2305
+epi 122: lr_critic 0.000501, lr_actor 0.000074, lr_alpha 0.000074
+
+epi 123: travel 39.438km, SOC 0.4440, FCS-SOH 0.999411, Bat-SOH 0.999326
+epi 123: H2_100km 4152.8g, eq_H2_100km 6630.1g, money_100km ￥850.35
+epi 123: ep_r -22.212, c-loss1 116958.0278, c-loss2 117842.0493, a-loss 6533.0977, en-loss 0.2108
+epi 123: lr_critic 0.000489, lr_actor 0.000073, lr_alpha 0.000073
+
+epi 124: travel 39.438km, SOC 0.4287, FCS-SOH 0.999443, Bat-SOH 0.999361
+epi 124: H2_100km 4120.5g, eq_H2_100km 6599.3g, money_100km ￥814.10
+epi 124: ep_r -23.277, c-loss1 86978.9226, c-loss2 87567.6571, a-loss 6127.3118, en-loss 0.1807
+epi 124: lr_critic 0.000478, lr_actor 0.000073, lr_alpha 0.000073
+
+failure in step 2704 of episode 125
+
+epi 125: travel 39.438km, SOC 0.3496, FCS-SOH 0.999525, Bat-SOH 0.998945
+epi 125: H2_100km 4087.9g, eq_H2_100km 6580.1g, money_100km ￥858.51
+epi 125: ep_r -78.242, c-loss1 63401.7210, c-loss2 63303.9303, a-loss 5633.8412, en-loss 0.1573
+epi 125: lr_critic 0.000466, lr_actor 0.000072, lr_alpha 0.000072
+
+failure in step 2621 of episode 126
+
+epi 126: travel 39.438km, SOC 0.3401, FCS-SOH 0.999582, Bat-SOH 0.998896
+epi 126: H2_100km 4093.0g, eq_H2_100km 6586.3g, money_100km ￥828.39
+epi 126: ep_r -93.650, c-loss1 73647.2743, c-loss2 73685.3546, a-loss 5717.2249, en-loss 0.0907
+epi 126: lr_critic 0.000454, lr_actor 0.000071, lr_alpha 0.000071
+
+failure in step 2728 of episode 127
+
+epi 127: travel 39.438km, SOC 0.3657, FCS-SOH 0.999514, Bat-SOH 0.999020
+epi 127: H2_100km 4091.3g, eq_H2_100km 6653.3g, money_100km ￥847.31
+epi 127: ep_r -63.143, c-loss1 102205.8228, c-loss2 102478.9727, a-loss 6143.4182, en-loss 0.0155
+epi 127: lr_critic 0.000442, lr_actor 0.000071, lr_alpha 0.000071
+
+failure in step 2626 of episode 128
+
+epi 128: travel 39.438km, SOC 0.3457, FCS-SOH 0.999575, Bat-SOH 0.998849
+epi 128: H2_100km 4083.4g, eq_H2_100km 6635.8g, money_100km ￥846.16
+epi 128: ep_r -93.401, c-loss1 135015.5979, c-loss2 135568.7917, a-loss 6450.0499, en-loss -0.0984
+epi 128: lr_critic 0.000430, lr_actor 0.000070, lr_alpha 0.000070
+
+epi 129: travel 39.438km, SOC 0.3773, FCS-SOH 0.999435, Bat-SOH 0.999214
+epi 129: H2_100km 4038.7g, eq_H2_100km 6612.0g, money_100km ￥855.36
+epi 129: ep_r -21.637, c-loss1 167884.8387, c-loss2 168967.2234, a-loss 6970.2417, en-loss -0.1914
+epi 129: lr_critic 0.000418, lr_actor 0.000069, lr_alpha 0.000069
+
+epi 130: travel 39.438km, SOC 0.3793, FCS-SOH 0.999427, Bat-SOH 0.999260
+epi 130: H2_100km 4010.0g, eq_H2_100km 6619.9g, money_100km ￥846.63
+epi 130: ep_r -22.148, c-loss1 166758.9811, c-loss2 167742.2839, a-loss 6942.6606, en-loss -0.1361
+epi 130: lr_critic 0.000406, lr_actor 0.000069, lr_alpha 0.000069
+
+epi 131: travel 39.438km, SOC 0.3784, FCS-SOH 0.999431, Bat-SOH 0.999341
+epi 131: H2_100km 3999.4g, eq_H2_100km 6555.0g, money_100km ￥821.31
+epi 131: ep_r -25.495, c-loss1 147643.9082, c-loss2 148369.8238, a-loss 6940.5831, en-loss -0.0708
+epi 131: lr_critic 0.000394, lr_actor 0.000068, lr_alpha 0.000068
+
+epi 132: travel 39.438km, SOC 0.3815, FCS-SOH 0.999399, Bat-SOH 0.999286
+epi 132: H2_100km 4007.1g, eq_H2_100km 6601.2g, money_100km ￥861.15
+epi 132: ep_r -22.360, c-loss1 151080.6058, c-loss2 152008.1360, a-loss 6960.5642, en-loss -0.0586
+epi 132: lr_critic 0.000383, lr_actor 0.000068, lr_alpha 0.000068
+
+epi 133: travel 39.438km, SOC 0.3734, FCS-SOH 0.999441, Bat-SOH 0.999344
+epi 133: H2_100km 3986.3g, eq_H2_100km 6550.0g, money_100km ￥813.49
+epi 133: ep_r -24.458, c-loss1 166752.8457, c-loss2 168449.5270, a-loss 6944.6933, en-loss -0.0332
+epi 133: lr_critic 0.000371, lr_actor 0.000067, lr_alpha 0.000067
+
+epi 134: travel 39.438km, SOC 0.3735, FCS-SOH 0.999411, Bat-SOH 0.999276
+epi 134: H2_100km 4003.3g, eq_H2_100km 6569.7g, money_100km ￥854.82
+epi 134: ep_r -22.083, c-loss1 175345.2197, c-loss2 177285.7883, a-loss 6955.4077, en-loss -0.0562
+epi 134: lr_critic 0.000359, lr_actor 0.000066, lr_alpha 0.000066
+
+epi 135: travel 39.438km, SOC 0.3618, FCS-SOH 0.999411, Bat-SOH 0.999271
+epi 135: H2_100km 4004.5g, eq_H2_100km 6538.4g, money_100km ￥855.70
+epi 135: ep_r -21.673, c-loss1 170484.7221, c-loss2 172185.5321, a-loss 7025.5337, en-loss -0.0917
+epi 135: lr_critic 0.000347, lr_actor 0.000066, lr_alpha 0.000066
+
+epi 136: travel 39.438km, SOC 0.3609, FCS-SOH 0.999403, Bat-SOH 0.999305
+epi 136: H2_100km 3965.0g, eq_H2_100km 6567.2g, money_100km ￥851.19
+epi 136: ep_r -23.308, c-loss1 183038.6836, c-loss2 185067.9056, a-loss 7104.5367, en-loss -0.0882
+epi 136: lr_critic 0.000335, lr_actor 0.000065, lr_alpha 0.000065
+
+epi 137: travel 39.438km, SOC 0.3552, FCS-SOH 0.999423, Bat-SOH 0.999249
+epi 137: H2_100km 3993.3g, eq_H2_100km 6513.5g, money_100km ￥852.86
+epi 137: ep_r -21.529, c-loss1 153300.2126, c-loss2 155362.6805, a-loss 6949.2337, en-loss 0.0015
+epi 137: lr_critic 0.000323, lr_actor 0.000064, lr_alpha 0.000064
+
+epi 138: travel 39.438km, SOC 0.3646, FCS-SOH 0.999410, Bat-SOH 0.999343
+epi 138: H2_100km 3965.8g, eq_H2_100km 6529.6g, money_100km ￥835.60
+epi 138: ep_r -24.733, c-loss1 123468.0778, c-loss2 125129.8320, a-loss 6398.2727, en-loss 0.1070
+epi 138: lr_critic 0.000311, lr_actor 0.000064, lr_alpha 0.000064
+
+epi 139: travel 39.438km, SOC 0.3627, FCS-SOH 0.999414, Bat-SOH 0.999313
+epi 139: H2_100km 3965.8g, eq_H2_100km 6539.2g, money_100km ￥840.77
+epi 139: ep_r -22.512, c-loss1 87783.9774, c-loss2 89460.1910, a-loss 5935.8016, en-loss 0.1920
+epi 139: lr_critic 0.000299, lr_actor 0.000063, lr_alpha 0.000063
+
+epi 140: travel 39.438km, SOC 0.3850, FCS-SOH 0.999413, Bat-SOH 0.999341
+epi 140: H2_100km 4022.4g, eq_H2_100km 6537.2g, money_100km ￥837.39
+epi 140: ep_r -25.384, c-loss1 41591.8212, c-loss2 42600.3688, a-loss 5379.0051, en-loss 0.2435
+epi 140: lr_critic 0.000287, lr_actor 0.000063, lr_alpha 0.000063
+
+epi 141: travel 39.438km, SOC 0.3922, FCS-SOH 0.999427, Bat-SOH 0.999361
+epi 141: H2_100km 4033.3g, eq_H2_100km 6524.0g, money_100km ￥821.34
+epi 141: ep_r -27.709, c-loss1 18159.5103, c-loss2 18419.5682, a-loss 4998.5573, en-loss 0.2097
+epi 141: lr_critic 0.000276, lr_actor 0.000062, lr_alpha 0.000062
+
+epi 142: travel 39.438km, SOC 0.3932, FCS-SOH 0.999413, Bat-SOH 0.999369
+epi 142: H2_100km 4028.5g, eq_H2_100km 6538.0g, money_100km ￥829.45
+epi 142: ep_r -23.918, c-loss1 13245.8637, c-loss2 13126.7081, a-loss 4903.5602, en-loss 0.1630
+epi 142: lr_critic 0.000264, lr_actor 0.000061, lr_alpha 0.000061
+
+epi 143: travel 39.438km, SOC 0.3952, FCS-SOH 0.999422, Bat-SOH 0.999344
+epi 143: H2_100km 4030.5g, eq_H2_100km 6531.6g, money_100km ￥828.32
+epi 143: ep_r -24.323, c-loss1 11376.3938, c-loss2 11190.6344, a-loss 4792.3800, en-loss 0.1255
+epi 143: lr_critic 0.000252, lr_actor 0.000061, lr_alpha 0.000061
+
+epi 144: travel 39.438km, SOC 0.3619, FCS-SOH 0.999505, Bat-SOH 0.999162
+epi 144: H2_100km 4055.2g, eq_H2_100km 6504.9g, money_100km ￥817.22
+epi 144: ep_r -36.431, c-loss1 13239.5657, c-loss2 13039.4570, a-loss 4718.4610, en-loss 0.0722
+epi 144: lr_critic 0.000240, lr_actor 0.000060, lr_alpha 0.000060
+
+failure in step 2715 of episode 145
+
+epi 145: travel 39.438km, SOC 0.3485, FCS-SOH 0.999563, Bat-SOH 0.999023
+epi 145: H2_100km 4086.4g, eq_H2_100km 6540.6g, money_100km ￥809.90
+epi 145: ep_r -75.004, c-loss1 28399.6863, c-loss2 28309.9485, a-loss 4768.3966, en-loss -0.0147
+epi 145: lr_critic 0.000228, lr_actor 0.000059, lr_alpha 0.000059
+
+failure in step 2722 of episode 146
+
+epi 146: travel 39.438km, SOC 0.3427, FCS-SOH 0.999554, Bat-SOH 0.999030
+epi 146: H2_100km 4067.2g, eq_H2_100km 6532.0g, money_100km ￥812.86
+epi 146: ep_r -71.455, c-loss1 59108.9510, c-loss2 59181.9591, a-loss 5120.9450, en-loss -0.0979
+epi 146: lr_critic 0.000216, lr_actor 0.000059, lr_alpha 0.000059
+
+epi 147: travel 39.438km, SOC 0.3523, FCS-SOH 0.999476, Bat-SOH 0.999213
+epi 147: H2_100km 4025.0g, eq_H2_100km 6536.7g, money_100km ￥823.08
+epi 147: ep_r -31.340, c-loss1 83477.1629, c-loss2 83841.4431, a-loss 5431.8964, en-loss -0.1248
+epi 147: lr_critic 0.000204, lr_actor 0.000058, lr_alpha 0.000058
+
+epi 148: travel 39.438km, SOC 0.3628, FCS-SOH 0.999407, Bat-SOH 0.999305
+epi 148: H2_100km 3957.4g, eq_H2_100km 6560.7g, money_100km ￥845.69
+epi 148: ep_r -23.787, c-loss1 100679.4733, c-loss2 101713.4334, a-loss 5561.3486, en-loss -0.1126
+epi 148: lr_critic 0.000192, lr_actor 0.000058, lr_alpha 0.000058
+
+epi 149: travel 39.438km, SOC 0.3721, FCS-SOH 0.999385, Bat-SOH 0.999330
+epi 149: H2_100km 3986.1g, eq_H2_100km 6517.3g, money_100km ￥858.85
+epi 149: ep_r -49.893, c-loss1 108205.1785, c-loss2 109541.1589, a-loss 5610.5665, en-loss -0.0553
+epi 149: lr_critic 0.000181, lr_actor 0.000057, lr_alpha 0.000057
+
+epi 150: travel 39.438km, SOC 0.3772, FCS-SOH 0.999461, Bat-SOH 0.999340
+epi 150: H2_100km 4022.7g, eq_H2_100km 6495.6g, money_100km ￥799.54
+epi 150: ep_r -81.299, c-loss1 111965.8727, c-loss2 113441.0439, a-loss 5687.8969, en-loss -0.0788
+epi 150: lr_critic 0.000169, lr_actor 0.000056, lr_alpha 0.000056
+
+failure in step 1142 of episode 151
+
+epi 151: travel 39.438km, SOC 0.4672, FCS-SOH 0.999485, Bat-SOH 0.999390
+epi 151: H2_100km 4212.0g, eq_H2_100km 6630.0g, money_100km ￥781.30
+epi 151: ep_r -246.135, c-loss1 120120.6021, c-loss2 121472.0095, a-loss 6142.3370, en-loss -0.1719
+epi 151: lr_critic 0.000157, lr_actor 0.000056, lr_alpha 0.000056
+
+failure in step 1223 of episode 152
+
+epi 152: travel 39.438km, SOC 0.9141, FCS-SOH 0.999373, Bat-SOH 0.999396
+epi 152: H2_100km 5095.3g, eq_H2_100km 7205.5g, money_100km ￥911.52
+epi 152: ep_r -267.587, c-loss1 135077.2367, c-loss2 142133.3784, a-loss 7124.3440, en-loss -0.1603
+epi 152: lr_critic 0.000145, lr_actor 0.000055, lr_alpha 0.000055
+
+failure in step 1250 of episode 153
+
+epi 153: travel 39.438km, SOC 0.4354, FCS-SOH 0.999347, Bat-SOH 0.999316
+epi 153: H2_100km 4110.1g, eq_H2_100km 6767.8g, money_100km ￥897.35
+epi 153: ep_r -220.830, c-loss1 165736.6226, c-loss2 174354.6963, a-loss 8489.9526, en-loss -0.0847
+epi 153: lr_critic 0.000133, lr_actor 0.000054, lr_alpha 0.000054
+
+failure in step 952 of episode 154
+
+epi 154: travel 39.438km, SOC 1.1076, FCS-SOH 0.999417, Bat-SOH 0.999168
+epi 154: H2_100km 5532.1g, eq_H2_100km 7868.8g, money_100km ￥961.03
+epi 154: ep_r -364.494, c-loss1 177884.1329, c-loss2 182518.0827, a-loss 10252.9013, en-loss -0.2346
+epi 154: lr_critic 0.000121, lr_actor 0.000054, lr_alpha 0.000054
+
+failure in step 1147 of episode 155
+
+epi 155: travel 39.438km, SOC 0.6691, FCS-SOH 0.999367, Bat-SOH 0.999164
+epi 155: H2_100km 4589.1g, eq_H2_100km 7323.1g, money_100km ￥947.72
+epi 155: ep_r -289.159, c-loss1 194843.1105, c-loss2 198913.4863, a-loss 12503.6775, en-loss -0.1496
+epi 155: lr_critic 0.000109, lr_actor 0.000053, lr_alpha 0.000053
+
+failure in step 1209 of episode 156
+
+epi 156: travel 39.438km, SOC 0.4949, FCS-SOH 0.999357, Bat-SOH 0.999175
+epi 156: H2_100km 4231.9g, eq_H2_100km 7052.9g, money_100km ￥931.89
+epi 156: ep_r -254.036, c-loss1 215245.8128, c-loss2 219733.0105, a-loss 14648.1245, en-loss 0.0593
+epi 156: lr_critic 0.000097, lr_actor 0.000052, lr_alpha 0.000052
+
+failure in step 1146 of episode 157
+
+epi 157: travel 39.438km, SOC 0.4246, FCS-SOH 0.999378, Bat-SOH 0.999151
+epi 157: H2_100km 4083.6g, eq_H2_100km 6935.2g, money_100km ￥916.20
+epi 157: ep_r -266.433, c-loss1 212735.0613, c-loss2 215220.0677, a-loss 16668.4194, en-loss 0.2369
+epi 157: lr_critic 0.000086, lr_actor 0.000052, lr_alpha 0.000052
+
+failure in step 933 of episode 158
+
+epi 158: travel 39.438km, SOC 0.9793, FCS-SOH 0.999341, Bat-SOH 0.999174
+epi 158: H2_100km 5215.0g, eq_H2_100km 7581.1g, money_100km ￥998.61
+epi 158: ep_r -334.987, c-loss1 223498.3422, c-loss2 225285.6472, a-loss 18680.4014, en-loss 0.2824
+epi 158: lr_critic 0.000074, lr_actor 0.000051, lr_alpha 0.000051
+
+failure in step 1214 of episode 159
+
+epi 159: travel 39.438km, SOC 0.5030, FCS-SOH 0.999329, Bat-SOH 0.999268
+epi 159: H2_100km 4238.2g, eq_H2_100km 6804.3g, money_100km ￥930.94
+epi 159: ep_r -234.400, c-loss1 229696.4974, c-loss2 229894.5508, a-loss 20908.6543, en-loss 0.4486
+epi 159: lr_critic 0.000062, lr_actor 0.000051, lr_alpha 0.000051
+
+failure in step 1221 of episode 160
+
+epi 160: travel 39.438km, SOC 0.3986, FCS-SOH 0.999373, Bat-SOH 0.999325
+epi 160: H2_100km 4063.5g, eq_H2_100km 6537.7g, money_100km ￥873.67
+epi 160: ep_r -197.484, c-loss1 248115.7537, c-loss2 248013.6156, a-loss 22586.6710, en-loss 0.3432
+epi 160: lr_critic 0.000050, lr_actor 0.000050, lr_alpha 0.000050
+
+failure in step 1427 of episode 161
+
+epi 161: travel 39.438km, SOC 0.3950, FCS-SOH 0.999424, Bat-SOH 0.999361
+epi 161: H2_100km 4054.3g, eq_H2_100km 6440.2g, money_100km ￥825.33
+epi 161: ep_r -96.692, c-loss1 268443.5379, c-loss2 267880.7624, a-loss 23849.8093, en-loss 0.1727
+epi 161: lr_critic 0.000056, lr_actor 0.000050, lr_alpha 0.000050
+
+epi 162: travel 39.438km, SOC 0.4090, FCS-SOH 0.999466, Bat-SOH 0.999357
+epi 162: H2_100km 4093.9g, eq_H2_100km 6391.8g, money_100km ￥797.10
+epi 162: ep_r -30.236, c-loss1 276952.2489, c-loss2 275708.5432, a-loss 24400.9137, en-loss 0.0701
+epi 162: lr_critic 0.000062, lr_actor 0.000051, lr_alpha 0.000051
+
+epi 163: travel 39.438km, SOC 0.4030, FCS-SOH 0.999486, Bat-SOH 0.999366
+epi 163: H2_100km 4069.8g, eq_H2_100km 6306.4g, money_100km ￥777.24
+epi 163: ep_r -24.575, c-loss1 264494.5300, c-loss2 262351.4968, a-loss 23600.5069, en-loss -0.0599
+epi 163: lr_critic 0.000068, lr_actor 0.000051, lr_alpha 0.000051
+
+epi 164: travel 39.438km, SOC 0.3909, FCS-SOH 0.999499, Bat-SOH 0.999392
+epi 164: H2_100km 4045.2g, eq_H2_100km 6260.3g, money_100km ￥760.36
+epi 164: ep_r -24.194, c-loss1 242098.3786, c-loss2 241250.3022, a-loss 22128.3224, en-loss -0.1136
+epi 164: lr_critic 0.000074, lr_actor 0.000051, lr_alpha 0.000051
+
+epi 165: travel 39.438km, SOC 0.3629, FCS-SOH 0.999508, Bat-SOH 0.999359
+epi 165: H2_100km 3972.8g, eq_H2_100km 6210.1g, money_100km ￥758.07
+epi 165: ep_r -24.548, c-loss1 225401.9088, c-loss2 225179.8392, a-loss 20817.1982, en-loss -0.1842
+epi 165: lr_critic 0.000080, lr_actor 0.000052, lr_alpha 0.000052
+
+epi 166: travel 39.438km, SOC 0.3494, FCS-SOH 0.999522, Bat-SOH 0.999343
+epi 166: H2_100km 3955.7g, eq_H2_100km 6168.5g, money_100km ￥750.77
+epi 166: ep_r -24.142, c-loss1 198166.7112, c-loss2 198900.8050, a-loss 18555.9139, en-loss -0.2660
+epi 166: lr_critic 0.000086, lr_actor 0.000052, lr_alpha 0.000052
+
+epi 167: travel 39.438km, SOC 0.3285, FCS-SOH 0.999485, Bat-SOH 0.999326
+epi 167: H2_100km 3915.7g, eq_H2_100km 6151.9g, money_100km ￥780.33
+epi 167: ep_r -24.581, c-loss1 171563.9290, c-loss2 172102.2733, a-loss 16349.8979, en-loss -0.1783
+epi 167: lr_critic 0.000092, lr_actor 0.000052, lr_alpha 0.000052
+
+epi 168: travel 39.438km, SOC 0.3115, FCS-SOH 0.999476, Bat-SOH 0.999325
+epi 168: H2_100km 3880.0g, eq_H2_100km 6130.4g, money_100km ￥786.25
+epi 168: ep_r -24.286, c-loss1 157720.0231, c-loss2 158630.5390, a-loss 14593.4127, en-loss -0.1603
+epi 168: lr_critic 0.000098, lr_actor 0.000053, lr_alpha 0.000053
+
+epi 169: travel 39.438km, SOC 0.2831, FCS-SOH 0.999489, Bat-SOH 0.999329
+epi 169: H2_100km 3827.0g, eq_H2_100km 6089.6g, money_100km ￥772.18
+epi 169: ep_r -25.179, c-loss1 137117.1811, c-loss2 137847.1632, a-loss 12865.4197, en-loss -0.0830
+epi 169: lr_critic 0.000103, lr_actor 0.000053, lr_alpha 0.000053
+
+epi 170: travel 39.438km, SOC 0.2457, FCS-SOH 0.999462, Bat-SOH 0.999298
+epi 170: H2_100km 3763.2g, eq_H2_100km 6068.6g, money_100km ￥797.14
+epi 170: ep_r -25.661, c-loss1 111713.1157, c-loss2 112995.8901, a-loss 10690.7794, en-loss -0.0169
+epi 170: lr_critic 0.000109, lr_actor 0.000053, lr_alpha 0.000053
+
+epi 171: travel 39.438km, SOC 0.2695, FCS-SOH 0.999480, Bat-SOH 0.999281
+epi 171: H2_100km 3797.8g, eq_H2_100km 6105.9g, money_100km ￥790.40
+epi 171: ep_r -24.704, c-loss1 87424.6171, c-loss2 88053.9829, a-loss 8969.7471, en-loss 0.0203
+epi 171: lr_critic 0.000115, lr_actor 0.000053, lr_alpha 0.000053
+
+epi 172: travel 39.438km, SOC 0.2816, FCS-SOH 0.999457, Bat-SOH 0.999310
+epi 172: H2_100km 3812.3g, eq_H2_100km 6165.4g, money_100km ￥800.54

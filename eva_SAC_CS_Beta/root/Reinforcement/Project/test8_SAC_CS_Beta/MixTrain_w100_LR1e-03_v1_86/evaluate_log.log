@@ -1,0 +1,45 @@
+max_episodes:  5
+cycle name:  /root/Reinforcement/Project/test8_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1_86
+episode_steps:  2174
+abs_spd_MAX: 26.772 m/s
+abs_acc_MAX: 3.237 m/s2
+DRL method:  SAC
+obs_dim:  7
+action_dim:  1
+critic initial learning rate: 1e-03
+actor initial learning rate: 1e-04
+alpha initial learning rate: 1e-04
+initial SOC:  0.5
+SOC-MODE:  CS
+
+-----Start evaluating!-----
+
+---Beta policy is employed.---
+
+actor device:  cuda:0
+critic device:  cuda:0
+Agent successfully loaded actor_network: /root/Reinforcement/Project/test8_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1/net_params/actor_params_ep86.pkl
+Agent successfully loaded critic_network: /root/Reinforcement/Project/test8_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1/net_params/critic_params_ep86.pkl
+Agent successfully loaded alpha_network: /root/Reinforcement/Project/test8_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1/net_params/alpha_params_ep86.pkl
+
+epi 0: travel 21.822km, SOC 0.1560, Bat-SOH 0.999667, FCS-SOH 0.999526, Max Tep_c 45.49
+epi 0: h2_100km 5961.42g, money_100km ￥969.97
+episode 0: reward -19.217, time spent: 2.987s
+
+epi 1: travel 21.822km, SOC 0.1257, Bat-SOH 0.999688, FCS-SOH 0.999559, Max Tep_c 45.70
+epi 1: h2_100km 5902.01g, money_100km ￥909.23
+episode 1: reward -19.211, time spent: 2.920s
+
+epi 2: travel 21.822km, SOC 0.1492, Bat-SOH 0.999680, FCS-SOH 0.999534, Max Tep_c 45.69
+epi 2: h2_100km 5959.19g, money_100km ￥951.79
+episode 2: reward -19.628, time spent: 2.897s
+
+epi 3: travel 21.822km, SOC 0.1287, Bat-SOH 0.999666, FCS-SOH 0.999544, Max Tep_c 46.00
+epi 3: h2_100km 5928.44g, money_100km ￥940.38
+episode 3: reward -19.311, time spent: 2.912s
+
+epi 4: travel 21.822km, SOC 0.1282, Bat-SOH 0.999682, FCS-SOH 0.999537, Max Tep_c 45.51
+epi 4: h2_100km 5893.33g, money_100km ￥943.13
+episode 4: reward -18.861, time spent: 2.930s
+-----Evaluating is finished!-----
+-----Data saved in: <./eva_SAC_CS_Beta//root/Reinforcement/Project/test8_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1_86>-----
