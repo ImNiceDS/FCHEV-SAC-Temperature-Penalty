@@ -1,55 +1,124 @@
-# FCHEV-EMS: Health-considered energy management strategy for fuel cell hybrid electric vehicle based on improved soft actor critic algorithm adopted with Beta policy.
+# FCHEV-EMS: Health-aware Energy Management Strategy using SAC + Beta Policy with Temperature-based Reward
 
-## Overview
+\## Overview
+This repository reproduces the original **“Health-considered energy management strategy for FCHEV using improved SAC with Beta Policy”**  
+and extends it by redesigning the reward with a **battery core temperature penalty** to improve thermal safety, SOC stability,  
+and realistic EMS behavior.
 
-The original implementation of **Health-considered energy management strategy for fuel cell hybrid electric vehicle based on improved soft actor critic algorithm adopted with Beta policy.**
+The project includes:
+- Reproduction of the original SAC-Beta EMS  
+- Reward redesign using **SOC + Battery Temperature Penalty**  
+- Comparison experiments across Train / Valid driving cycles  
+- Jupyter notebook analysis and final PPT report  
 
-## Abstract
+---
 
-Deep reinforcement learning-based energy management strategy (EMS) is essential for fuel cell hybrid electric vehicles to reduce hydrogen consumption, improve health performance and maintain charge. This is a complex nonlinear constrained optimization problem. In order to solve the problem of high bias caused by the inconsistency between the infinite support of stochastic policy and the bounded physics constraints of application scenarios, this paper proposes the Beta policy to improve standard soft actor critic (SAC) algorithm. This work takes hydrogen consumption, health degradation of both fuel cell system and power battery, and charge margin into consideration to design an EMS based on the improved SAC algorithm. Specifically, an appropriate tradeoff between money cost during driving and charge margin is firstly determined. Then, optimization performance differences between the Beta policy and the standard Gaussian policy are presented. Thirdly, ablation experiments of health constraints are conducted to show the validity of health management. Finally, comparison experiments indicate that, the proposed strategy has a 5.12% performance gap with dynamic programming-based EMS with respect to money cost, but is 4.72% better regarding to equivalent hydrogen consumption. Moreover, similar performances in validation cycle demonstrate good adaptability of the proposed EMS.
+\## Abstract (Updated for This Research)
+This project implements and extends the SAC-Beta Energy Management Strategy (EMS) for Fuel Cell Hybrid Electric Vehicles (FCHEVs).  
+The original SAC-Beta EMS effectively stabilizes SOC and optimizes hydrogen consumption but does not explicitly consider  
+battery thermal safety, making the system vulnerable to overheating during high-power driving.
 
-## Project Submission Details
+To address this limitation, we redesign the reward by introducing a **temperature penalty** when battery core temperature exceeds 58°C.  
+This improves thermal safety and encourages the agent to distribute power more conservatively between the fuel cell system (FCS)  
+and the battery.
 
-### Execution Instructions
+Experimental results show that the redesigned reward:
+- significantly reduces peak battery temperatures,  
+- maintains SOC above 30%,  
+- improves thermal stability across both Train and Valid cycles,  
+- results in more realistic EMS behavior,  
+- with only a moderate increase in hydrogen consumption.
 
-To run the project, please refer to the arguments configuration file:
-- **Configuration File**: `common/arguments.py`
-    - This file contains settings for training/evaluation, `scenario_name`, and other parameters.
+---
 
-### Trained Models
+\## Project Structure
+common/                     # 환경 설정, arguments, utility functions  
+eva_SAC_CS_Beta/            # evaluation scripts  
+test5_SAC_CS_Beta/          # 원본 논문 재현 (SOC 기반 reward)  
+test8_SAC_CS_Beta/          # 논문 재현 + 배터리 코어 온도 로그 저장  
+test9_SAC_CS_Beta/          # 보상 조건 개선 (SOC + Temperature penalty)  
+project-data-main/          # driving cycles, FCHEV component data  
+*.ipynb                     # 분석 및 결과 플로팅 노트북  
+README.md  
 
-The trained models are available in the following directories:
+---
 
-1. **test5_SAC_CS_Beta** (Paper Reproduction)
-   - Path: `./test5_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1/episode_data`
+\## How to Run
 
-2. **test8_SAC_CS_Beta** (Paper Reproduction with Battery Core Temperature Logging)
-   - Path: `./test8_SAC_CS_Beta`
+\### 1) Configuration File
+모든 실험 설정은 아래 파일에서 제어:
+common/arguments.py
 
-3. **test9_SAC_CS_Beta** (Reward Condition Redesign)
-   - Path: `./test9_SAC_CS_Beta`
+주요 옵션:
+- `--mode`: train / eval  
+- `--scenario_name`: CLTC-P / WVU-INTER / MixTrain  
+- `--reward_mode`: original / temp_penalty  
+- `--seed`: reproducibility 설정  
+- `--max_episodes`: 학습 에피소드 수  
 
-### Report
+---
 
-The project report (PPT) covers the project topic, design details, implementation methods, and experimental results. It is available in this repository and has also been submitted to the Cyber Campus.
+\### 2) Training
 
-## Data
+python main.py --mode train --scenario_name MixTrain --reward_mode temp_penalty
 
-1. **Driving Cycles can be found [here](https://github.com/sicilyala/project-data/tree/main/standard_driving_cycles).**
+\### 3) Evaluation
 
-2. **Power system data can be found [here](https://github.com/sicilyala/project-data/tree/main/FCHEV_data).**
+python main.py --mode eval --scenario_name MixTrain --model_path <saved_model_directory>
+---
 
-## Citation
-**BibTex**
-```
+\## Trained Models (Deep Learning Checkpoints)
+
+\### 📁 test5_SAC_CS_Beta — Original Reward (논문 재현)
+
+test5_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1/episode_data
+
+
+\### 📁 test8_SAC_CS_Beta — Original Reward + Battery Temperature Logging
+
+test8_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1_86/episode_data
+
+
+\### 📁 test9_SAC_CS_Beta — Improved Reward (SOC + Temperature Penalty)
+
+test9_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1_73/episode_data
+
+
+\### 🔗 Google Drive Download Link (trained SAC models)
+(업로드 후 링크 추가)
+
+---
+
+\## Report (PPT)
+프로젝트 발표 자료(PPT)는 저장소 내 포함됨:
+- `report/FCHEV_RL_Project_Final.pptx`  
+- 동일 자료 CyberCampus 제출  
+
+보고서 첫 슬라이드 구성:
+- 팀원 학번 / 이름  
+- GitHub repository 링크  
+- 프로젝트 주제  
+
+---
+
+\## Data Source
+Driving Cycles  
+🔗 https://github.com/sicilyala/project-data/tree/main/standard_driving_cycles  
+
+FCHEV Power System Data  
+🔗 https://github.com/sicilyala/project-data/tree/main/FCHEV_data  
+
+---
+
+\## Citation
+
 @article{chen2023health,
-  title={Health-considered energy management strategy for fuel cell hybrid electric vehicle based on improved soft actor critic algorithm adopted with Beta policy},
-  author={Chen, Weiqi and Peng, Jiankun and Chen, Jun and Zhou, Jiaxuan and Wei, Zhongbao and Ma, Chunye},
-  journal={Energy Conversion and Management},
-  volume={292},
-  pages={117362},
-  year={2023},
-  publisher={Elsevier},
-  url={https://www.sciencedirect.com/science/article/abs/pii/S0196890423007082}
+title={Health-considered energy management strategy for fuel cell hybrid electric vehicle based on improved soft actor critic algorithm adopted with Beta policy},
+author={Chen, Weiqi and Peng, Jiankun and Chen, Jun and Zhou, Jiaxuan and Wei, Zhongbao and Ma, Chunye},
+journal={Energy Conversion and Management},
+volume={292},
+pages={117362},
+year={2023},
+publisher={Elsevier}
 }
-```
+
