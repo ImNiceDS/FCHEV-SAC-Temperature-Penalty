@@ -14,7 +14,8 @@ The project includes:
 
 ---
 
-\## Abstract (Updated for This Research)
+## Abstract (Updated for This Research)
+
 This project implements and extends the SAC-Beta Energy Management Strategy (EMS) for Fuel Cell Hybrid Electric Vehicles (FCHEVs).  
 The original SAC-Beta EMS effectively stabilizes SOC and optimizes hydrogen consumption but does not explicitly consider  
 battery thermal safety, making the system vulnerable to overheating during high-power driving.
@@ -32,7 +33,8 @@ Experimental results show that the redesigned reward:
 
 ---
 
-\## Project Structure
+## Project Structure
+
 common/                     # 환경 설정, arguments, utility functions  
 eva_SAC_CS_Beta/            # evaluation scripts  
 test5_SAC_CS_Beta/          # 원본 논문 재현 (SOC 기반 reward)  
@@ -44,9 +46,10 @@ README.md
 
 ---
 
-\## How to Run
+## How to Run
 
-\### 1) Configuration File
+### 1) Configuration File
+
 모든 실험 설정은 아래 파일에서 제어:
 common/arguments.py
 
@@ -59,58 +62,51 @@ common/arguments.py
 
 ---
 
-\### 2) Training
+### 2) Training
 
 python main.py --mode train --scenario_name MixTrain --reward_mode temp_penalty
 
-\### 3) Evaluation
+### 3) Evaluation
 
 python main.py --mode eval --scenario_name MixTrain --model_path <saved_model_directory>
 ---
 
-\## Trained Models (Deep Learning Checkpoints)
+## Trained Models (Deep Learning Checkpoints)
 
-\### 📁 test5_SAC_CS_Beta — Original Reward (논문 재현)
+### 📁 test5_SAC_CS_Beta — Original Reward (논문 재현)
 
 test5_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1/episode_data
 
 
-\### 📁 test8_SAC_CS_Beta — Original Reward + Battery Temperature Logging
+### 📁 test8_SAC_CS_Beta — Original Reward + Battery Temperature Logging
 
 test8_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1_86/episode_data
 
 
-\### 📁 test9_SAC_CS_Beta — Improved Reward (SOC + Temperature Penalty)
+### 📁 test9_SAC_CS_Beta — Improved Reward (SOC + Temperature Penalty)
 
 test9_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1_73/episode_data
 
-
-\### 🔗 Google Drive Download Link (trained SAC models)
-(업로드 후 링크 추가)
-
 ---
 
-\## Report (PPT)
+## Report (PPT)
+
 프로젝트 발표 자료(PPT)는 저장소 내 포함됨:
-- `report/FCHEV_RL_Project_Final.pptx`  
-- 동일 자료 CyberCampus 제출  
-
-보고서 첫 슬라이드 구성:
-- 팀원 학번 / 이름  
-- GitHub repository 링크  
-- 프로젝트 주제  
 
 ---
 
-\## Data Source
-Driving Cycles  
+## Data Source
+
+## Driving Cycles
 🔗 https://github.com/ImNiceDS/FCHEV-SAC-Temperature-Penalty/tree/8594e030dc4df073a110a6628f525bcd52db4c65/project-data-main/standard_driving_cycles
 
-FCHEV Power System Data  
+## FCHEV Power System Data
 🔗 https://github.com/ImNiceDS/FCHEV-SAC-Temperature-Penalty/tree/8594e030dc4df073a110a6628f525bcd52db4c65/project-data-main/FCHEV_data
+
+
 ---
 
-\## Citation
+## Citation
 
 @article{chen2023health,
 title={Health-considered energy management strategy for fuel cell hybrid electric vehicle based on improved soft actor critic algorithm adopted with Beta policy},
