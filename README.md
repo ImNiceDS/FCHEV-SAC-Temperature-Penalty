@@ -61,15 +61,16 @@ common/arguments.py
 
 ### 2) Training
 
-```
+```bash
 python main.py --mode train --scenario_name MixTrain --reward_mode temp_penalty
 ```
 
 ### 3) Evaluation
 
+```bash
+python main.py --mode eval --scenario_name MixValid --model_path <saved_model_directory>
 ```
-python main.py --mode eval --scenario_name MixTrain --model_path <saved_model_directory>
-```
+
 
 ---
 
