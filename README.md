@@ -8,9 +8,8 @@ The project includes:
 - Reproduction of the original SAC-Beta EMS  
 - Reward redesign using **SOC + Battery Temperature Penalty**  
 - Comparison experiments across Train / Valid driving cycles  
-- Jupyter notebook analysis and final PPT report  
-
-"본 프로젝트는 기존 연구의 환경 모델을 베이스로 하되, 보상 함수(Reward Function)를 재설계 및 추가하여 개선한 프로젝트입니다."
+- Jupyter notebook analysis and final PPT report
+- 
 ---
 
 ## Abstract (Updated for This Research)
@@ -124,4 +123,4 @@ test9_SAC_CS_Beta/MixTrain_w100_LR1e-03_v1_73/episode_data
 }
 ```
 
-
+"본 프로젝트는 기존 연구의 환경 모델을 베이스로 하되, 보상 함수(Reward Function)를 재설계 및 추가하여 개선한 프로젝트입니다."
