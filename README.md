@@ -1,37 +1,41 @@
-## Overview
-
-This repository reproduces the original **“Health-considered energy management strategy for FCHEV using improved SAC with Beta Policy”**  
-and extends it by redesigning the reward with a **battery core temperature penalty** to improve thermal safety, SOC stability,  
-and realistic EMS behavior.
-
-The project includes:
-- Reproduction of the original SAC-Beta EMS  
-- Reward redesign using **SOC + Battery Temperature Penalty**  
-- Comparison experiments across Train / Valid driving cycles  
-- Jupyter notebook analysis and final PPT report
-- 
----
-
-## Abstract (Updated for This Research)
-
-This project implements and extends the SAC-Beta Energy Management Strategy (EMS) for Fuel Cell Hybrid Electric Vehicles (FCHEVs).  
-The original SAC-Beta EMS effectively stabilizes SOC and optimizes hydrogen consumption but does not explicitly consider  
-battery thermal safety, making the system vulnerable to overheating during high-power driving.
-
-To address this limitation, we redesign the reward by introducing a **temperature penalty** when battery core temperature exceeds 58°C.  
-This improves thermal safety and encourages the agent to distribute power more conservatively between the fuel cell system (FCS)  
-and the battery.
-
-Experimental results show that the redesigned reward:
-- significantly reduces peak battery temperatures,  
-- maintains SOC above 30%,  
-- improves thermal stability across both Train and Valid cycles,  
-- results in more realistic EMS behavior,  
-- with only a moderate increase in hydrogen consumption.
+# FCHEV Energy Management with SAC-Beta & Temperature-Penalty Reward  
+수소전기차(FCHEV) 강화학습 기반 에너지 관리 최적화 연구
 
 ---
-## Project Structure
-```
+
+## 📘 Overview
+
+본 저장소는 기존 논문  
+**“Health-considered Energy Management Strategy for FCHEV using Improved SAC with Beta Policy”**  
+의 구현을 재현하고, 추가로 **배터리 코어 온도 기반 패널티(Temperature Penalty)** 를 적용한 새로운 보상 구조로 확장한 연구를 포함한다.
+
+목표는 열적 안전성 향상, SOC 안정화, 보다 현실적인 EMS 제어 정책을 학습하는 것이다.
+
+### 본 프로젝트는 다음을 포함한다:
+- SAC-Beta 기반 EMS 원본 논문 코드 재현  
+- **SOC + 배터리 온도 패널티 기반 Reward 설계**  
+- Train / Valid 주행 사이클 실험 비교  
+- Jupyter Notebook 분석 및 최종 발표 자료(PPT)
+
+---
+
+## 📄 Abstract (Updated for This Research)
+
+본 연구는 SAC-Beta 기반 Fuel Cell Hybrid Electric Vehicle(FCHEV) 에너지 관리 전략을 재현하고 확장한 프로젝트이다.  
+기존 EMS는 SOC 유지 및 수소 소비 최적화는 우수하지만, **배터리 열적 안전성(thermal safety)** 을 고려하지 않아 고부하 상황에서 과열 위험이 존재한다.
+
+이를 해결하기 위해 본 연구에서는 **배터리 코어 온도 58°C 초과 시 Temperature Penalty** 를 부과하는 새로운 보상 구조를 설계하였다.
+
+### 실험 결과 요약:
+- 최대 배터리 온도 감소 → 열적 안정성 향상  
+- SOC가 안정적으로 30% 이상 유지됨  
+- 더욱 현실적인 EMS 제어 정책 학습  
+- 수소 소비는 소폭 증가하나 안전성 측면의 개선이 더 큼  
+
+---
+
+## 📁 Project Structure
+
 common/                     # 환경 설정, arguments, utility functions
 eva_SAC_CS_Beta/            # evaluation scripts
 test5_SAC_CS_Beta/          # 원본 논문 재현 (SOC 기반 reward)
@@ -42,13 +46,13 @@ project-data-main/          # driving cycles, FCHEV component data
 README.md
 ```
 
-
-## How to Run
+## 🚀 How to Run
 
 ### 1) Configuration File
+모든 실험 설정은 아래 파일에서 제어된다:
 
-모든 실험 설정은 아래 파일에서 제어:
 common/arguments.py
+
 
 주요 옵션:
 - `--mode`: train / eval  
@@ -59,7 +63,7 @@ common/arguments.py
 
 ---
 
-### 2) Training
+### 2) Training 실행
 
 ```bash
 python main.py --mode train --scenario_name MixTrain --reward_mode temp_penalty
