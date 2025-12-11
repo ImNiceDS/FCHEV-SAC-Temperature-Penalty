@@ -37,15 +37,54 @@
 ## 📁 Project Structure
 
 ```
-common/                     # 환경 설정, arguments, utility functions
-eva_SAC_CS_Beta/            # evaluation scripts
-test5_SAC_CS_Beta/          # 원본 논문 재현 (SOC 기반 reward)
-test8_SAC_CS_Beta/          # 논문 재현 + 배터리 코어 온도 로그 저장
-test9_SAC_CS_Beta/          # 보상 조건 개선 (SOC + Temperature penalty)
-project-data-main/          # driving cycles, FCHEV component data
-*.ipynb                     # 분석 및 결과 플로팅 노트북
-README.md
+FCHEV-SAC-Temperature-Penalty/
+├── README.md                        # 프로젝트 문서
+├── main.ipynb                       # 메인 학습/실행 노트북
+├── Beta_test.ipynb                  # Beta 분포 테스트 노트북
+├── dp_main_new.ipynb                # Dynamic Programming 비교 실험
+├── dqn_main.ipynb                   # DQN 비교 실험
+├── powerdemand.ipynb                # 전력 수요 분석
+│
+├── common/                          # 공통 모듈
+│   ├── arguments.py                 # 실험 설정 및 하이퍼파라미터
+│   ├── runner.py                    # 학습 루프 및 실행 관리
+│   ├── sac.py                       # SAC-Beta 알고리즘 구현
+│   ├── network.py                   # Actor/Critic 신경망 정의
+│   ├── agentEMS.py                  # EMS 에이전트 래퍼
+│   ├── env.py                       # FCHEV 환경 정의
+│   ├── evaluate.py                  # 모델 평가 스크립트
+│   ├── memory.py                    # Replay Buffer
+│   ├── utils.py                     # 유틸리티 함수
+│   ├── FCHEV_SOH.py                 # Fuel Cell & Battery SOH 모델
+│   ├── Cell.py                      # 배터리 셀 모델링
+│   ├── ddpg.py                      # DDPG 알고리즘 (비교용)
+│   ├── dqn_model.py                 # DQN 알고리즘 (비교용)
+│   └── DP_EMS_agent.py              # DP 에이전트 (비교용)
+│
+├── eva_SAC_CS_Beta/                 # Evaluation 스크립트
+│   └── root/
+│
+├── test5_SAC_CS_Beta/               # 원본 논문 재현 (SOC 기반 Reward)
+│   └── MixTrain_w100_LR1e-03_v1/
+│       └── episode_data/            # 학습된 모델 체크포인트
+│
+├── test8_SAC_CS_Beta/               # 논문 재현 + 배터리 온도 로깅
+│   └── MixTrain_w100_LR1e-03_v1_86/
+│       └── episode_data/
+│
+├── test9_SAC_CS_Beta/               # 개선된 Reward (SOC + Temp Penalty)
+│   └── MixTrain_w100_LR1e-03_v1/
+│       └── episode_data/
+│
+├── logs5_SAC_CS_Beta/               # 학습 로그 저장
+│
+└── project-data-main/               # 데이터셋
+    ├── standard_driving_cycles/     # 주행 사이클 데이터
+    ├── FCHEV_data/                  # FCHEV 컴포넌트 파라미터
+    └── HEV_data/                    # HEV 비교 데이터
 ```
+
+---
 
 ## 🚀 How to Run
 
